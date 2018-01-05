@@ -1,0 +1,42 @@
+{
+    "locale": "nl_BE",
+    "parent": "bootstrap-create-horizontal",
+    "layout": {
+      "template": "/wizards-example2-template.html"
+    },
+    "wizard": {
+        "title": "Welcome to the Wizard",
+        "description": "Please fill things in as you wish",
+        "showSteps": true,
+        "showProgressBar": false,
+        "bindings": {
+            "name": 1,
+            "age": 1,
+            "gender": 1,
+            "photo": 1,
+            "member": 2,
+            "phone": 2,
+            "icecream": 3,
+            "address": 3
+        },
+        "steps": [{
+            "title": "Getting Started",
+            "description": "Basic Information"
+        }, {
+            "title": "Details",
+            "description": "Personal Information"
+        }, {
+            "title": "Preferences",
+            "description": "Customize your Profile"
+        }],
+        "buttons": {
+            "submit": {
+                "title": "All Done!",
+                "id": "mySubmit",
+                "attributes": {
+                    "data-test": "123"
+                }
+            }
+        }
+    }
+}
