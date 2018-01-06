@@ -4,6 +4,8 @@
 * create php file that generates pdf
 * create php file that sends email
 * form layout bootstrap/ material
+* npm, grunt, minify, 
+
 
 
 # scripts
