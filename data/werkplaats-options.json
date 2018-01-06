@@ -11,5 +11,11 @@
             "type": "address",
             "addressValidation": true
         }
+    },
+    "form": {
+        "attributes": {
+            "method": "post",
+            "action": "http://httpbin.org/post"
+        }
     }
 }

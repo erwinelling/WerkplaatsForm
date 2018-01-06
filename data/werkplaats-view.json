@@ -1,14 +1,8 @@
 {
     "locale": "nl_BE",
-    "parent": "bootstrap-create-horizontal",
+    "parent": "bootstrap-create",
     "layout": {
-      "template": "/wizards-example2-template.html"
-    },
-    "form": {
-        "attributes": {
-          "action": "http://httpbin.org/post",
-          "method": "post"
-        },
+      "template": "http://localhost/~erwinelling/Werkplaats/WerkplaatsForm/wizards-example2-template.html"
     },
     "wizard": {
         "title": "Welcome to the Wizard",
