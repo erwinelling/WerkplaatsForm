@@ -32,9 +32,256 @@ $(document).ready(function() {
     var schema = {
         "type": "object",
         "properties": {
-            "name": {
+            "achternaam":{
+                "type": "string",
+                "required": true
+            },
+            "voornamen":{
+                "type": "string",
+                "required": true
+            },
+            "roepnaam":{
+                "type": "string",
+                "required": true
+            },
+            "geslacht":{
+                "type": "string",
+                "enum":[
+                    "Jongen",
+                    "Meisje"
+                ]
+            },
+            "geboortedatum":{
+                "format": "date",
+                "default": "1/12/2018"
+            },
+            "geboorteplaats":{
+                "type": "string",
+                "required": true
+            },
+            "nationaliteit":{
+                "type": "string",
+                "required": true
+            },
+            "adres":{
+                "type": "string",
+                "required": true
+            },
+            "postcode":{
+                "type": "string",
+                "required": true
+            },
+            "woonplaats":{
+                "type": "string",
+                "required": true
+            },
+            "telefoonnummer":{
+                "type": "string",
+                "required": true
+            },
+            "naam-verzorger-a":{
+                "type": "string",
+                "required": true
+            },
+            "mobiele-telefoonnummer-verzorger-a":{
+                "type": "string",
+                "required": true
+            },
+            "email-verzorger-a":{
+                "type": "string",
+                "required": true
+            },
+            "beroep-verzorger-a":{
+                "type": "string",
+                "required": true
+            },
+            "naam-verzorger-b":{
+                "type": "string",
+                "required": true
+            },
+            "mobiele-telefoonnummer-verzorger-b":{
+                "type": "string",
+                "required": true
+            },
+            "email-verzorger-b":{
+                "type": "string",
+                "required": true
+            },
+            "beroep-verzorger-b":{
+                "type": "string",
+                "required": true
+            },
+            "thuissituatie":{
+                "type": "string",
+                "enum":[
+                    "Samenwonend",
+                    "Een ouder gezin",
+                    "Co-ouderschap"
+                ]
+            },
+            "gezag":{
+                "type": "string",
+                "enum":[
+                    "Beide ouders",
+                    "Een ouder",
+                    "Anders"
+                ]
+            },
+            "gezag-specifiek":{
+                "type": "string",
+                "enum":[
+                    "Beide ouders",
+                    "Een ouder",
+                    "Anders"
+                ]
+            },
+            "informatieochtend":{
                 "type": "string"
             },
+
+
+            "aantal-kinderen":{
+                "type": "string"
+            },
+            "leeftijd-kinderen":{
+                "type": "string"
+            },
+            "scholen-kinderen":{
+                "type": "string"
+            },
+
+
+            "aandacht-soc-emo":{
+                "type": "string",
+                "enum": ["ja", "nee"]
+            },
+            "aandacht-soc-emo-uitleg":{
+                "type": "string"
+            },
+            "bso":{
+                "type": "string",
+                "enum": ["ja", "nee"]
+            },
+            "bso-uitleg":{
+                "type": "string"
+            },
+            "aandacht-spelen-leren":{
+                "type": "string",
+                "enum": ["ja", "nee"]
+            },
+            "aandacht-spelen-leren-uitleg":{
+                "type": "string"
+            },
+            "dyslexie":{
+                "type": "string",
+                "enum": ["ja", "nee"]
+            },
+            "aandacht-gezichtsvermogen":{
+                "type": "string",
+                "enum": ["ja", "nee"]
+            },
+            "aandacht-gezichtsvermogen-uitleg":{
+                "type": "string"
+            },
+            "onderzoeken":{
+                "type": "string",
+                "enum": ["ja", "nee"]
+            },
+            "onderzoeken-uitleg":{
+                "type": "string"
+            },
+            "bijzonderheden":{
+              "type": "string",
+              "enum": ["ja", "nee"]
+            },
+            "bijzonderheden-uitleg":{
+                "type": "string"
+            },
+
+            "kdv":{
+                "type": "string",
+                "enum": ["ja", "nee"]
+            },
+            "kdv-uitleg":{
+                "type": "string"
+            },
+            "logopedie":{
+                "type": "string",
+                "enum": ["ja", "nee"]
+            },
+            "gehoor":{
+                "type": "string",
+                "enum": ["ja", "nee"]
+            },
+            "vve":{
+                "type": "string",
+                "enum": ["ja", "nee"]
+            },
+            "aandacht-motorisch":{
+                "type": "string",
+                "enum": ["ja", "nee"]
+            },
+            "aandacht-motorisch-uitleg":{
+                "type": "string"
+            },
+            "zindelijk":{
+                "type": "string",
+                "enum": ["ja", "nee"]
+            },
+            "zindelijk-herinnering":{
+                "type": "string",
+                "enum": ["ja", "nee"]
+            },
+            "zindelijk-hulp":{
+                "type": "string",
+                "enum": ["ja", "nee"]
+            },
+            "eten-hulp":{
+                "type": "string",
+                "enum": ["ja", "nee"]
+            },
+            "jas-hulp":{
+                "type": "string",
+                "enum": ["ja", "nee"]
+            },
+            "schoenen-hulp":{
+                "type": "string",
+                "enum": ["ja", "nee"]
+            },
+
+
+
+            "school-laatst-bezocht":{
+                "type": "string"
+            },
+            "school-adres":{
+                "type": "string"
+            },
+            "school-postcode":{
+                "type": "string"
+            },
+            "school-plaats":{
+                "type": "string"
+            },
+            "school-tel":{
+                "type": "string"
+            },
+            "school-dir":{
+                "type": "string"
+            },
+            "reden-aanmelding":{
+                "type": "string"
+            },
+
+
+            "handtekening-verzorger-a":{
+                "type": "string"
+            },
+            "handtekening-verzorger-b":{
+                "type": "string"
+            },
+
+
             "age": {
                 "type": "number",
                 "minimum": 0,
@@ -47,6 +294,16 @@ $(document).ready(function() {
                 "type": "string",
                 "required": true
             }
+        },
+        "dependencies": {
+            "aandacht-soc-emo-uitleg": ["aandacht-soc-emo"],
+            "aandacht-spelen-leren-uitleg": ["aandacht-spelen-leren"],
+            "aandacht-gezichtsvermogen-uitleg": ["aandacht-gezichtsvermogen"],
+            "onderzoeken-uitleg": ["onderzoeken"],
+            "bijzonderheden-uitleg": ["bijzonderheden"],
+            "bso-uitleg": ["bso"],
+            "kdv-uitleg": ["kdv"],
+            "aandacht-motorisch-uitleg": ["aandacht-motorisch"]
         }
     };
 
@@ -62,10 +319,277 @@ $(document).ready(function() {
      */
     var options = {
         "fields": {
-            "name": {
-                "type": "text",
-                "label": "Name"
+            "achternaam":{
+                "label": "Achternaam"
             },
+            "voornamen":{
+                "label": "Voornamen"
+            },
+            "roepnaam":{
+                "label": "Roepnaam"
+            },
+            "geslacht":{
+                "label": "Geslacht",
+                "removeDefaultNone": true
+            },
+            "geboortedatum":{
+                "label": "Geboortedatum",
+                "type": "date"
+            },
+            "geboorteplaats":{
+                "label": "Geboorteplaats"
+            },
+            "nationaliteit":{
+                "label": "Nationaliteit"
+            },
+            "adres":{
+                "label": "Adres",
+                "type": "text"
+            },
+            "postcode":{
+                "label": "Postcode",
+                "type": "text"
+            },
+            "woonplaats":{
+                "label": "Woonplaats",
+                "type": "text"
+            },
+            "telefoonnummer":{
+                "label": "Telefoonnummer",
+                "type": "text"
+            },
+            "naam-verzorger-a":{
+                "label": "Naam",
+                "type": "text"
+            },
+            "mobiele-telefoonnummer-verzorger-a":{
+                "label": "Mobiele telefoonnummer",
+                "type": "text"
+            },
+            "email-verzorger-a":{
+                "label": "E-mailadres",
+                "type": "text"
+            },
+            "beroep-verzorger-a":{
+                "label": "Beroep",
+                "type": "text"
+            },
+            "naam-verzorger-b":{
+                "label": "Naam",
+                "type": "text"
+            },
+            "mobiele-telefoonnummer-verzorger-b":{
+                "label": "Mobiele telefoonnummer",
+                "type": "text"
+            },
+            "email-verzorger-b":{
+                "label": "E-mailadres",
+                "type": "text"
+            },
+            "beroep-verzorger-b":{
+                "label": "Beroep",
+                "type": "text"
+            },
+            "thuissituatie":{
+                "label": "Thuissituatie",
+            },
+            "gezag":{
+                "label": "Bij wie ligt het gezag?",
+            },
+            "gezag-specifiek":{
+                "label": "Namelijk:",
+                "type": "text"
+            },
+            "informatieochtend":{
+                "label": "Informatieochtend",
+                "type": "text"
+            },
+            "aantal-kinderen":{
+                "label": "Uit hoeveel kinderen bestaat uw gezin?",
+                "type": "text"
+            },
+            "leeftijd-kinderen":{
+                "label": "Leeftijd kinderen in uw gezin?",
+                "type": "text"
+            },
+            "scholen-kinderen":{
+                "label": "Scholen kinderen in uw gezin?",
+                "type": "text"
+            },
+            "aandacht-soc-emo":{
+                "label": "Speciale aandacht soc-emo?",
+                "removeDefaultNone": true
+            },
+            "aandacht-soc-emo-uitleg":{
+                "label": "Uitleg",
+                "type": "text",
+                "dependencies": {
+                  "aandacht-soc-emo": "ja"
+                }
+            },
+            "bso":{
+                "label": "BSO?",
+                "removeDefaultNone": true
+            },
+            "bso-uitleg":{
+                "label": "Uitleg",
+                "type": "text",
+                "dependencies": {
+                  "bso": "ja"
+                }
+            },
+            "aandacht-spelen-leren":{
+                "label": "Speciale aandacht spelen leren?",
+                "removeDefaultNone": true
+            },
+            "aandacht-spelen-leren-uitleg":{
+                "label": "Uitleg",
+                "type": "text",
+                "dependencies": {
+                  "aandacht-spelen-leren": "ja"
+                }
+            },
+            "dyslexie":{
+                "label": "Dyslexie?",
+                "removeDefaultNone": true
+            },
+            "aandacht-gezichtsvermogen":{
+                "label": "Gezichtsvermogen?",
+                "removeDefaultNone": true
+            },
+            "aandacht-gezichtsvermogen-uitleg":{
+                "label": "Uitleg",
+                "type": "text",
+                "dependencies": {
+                  "aandacht-gezichtsvermogen": "ja"
+                }
+            },
+            "onderzoeken":{
+                "label": "Onderzoeken?",
+                "removeDefaultNone": true
+            },
+            "onderzoeken-uitleg":{
+                "label": "Uitleg",
+                "type": "text",
+                "dependencies": {
+                  "onderzoeken": "ja"
+                }
+            },
+            "bijzonderheden":{
+                "label": "Bijzonderheden?",
+                "removeDefaultNone": true
+            },
+            "bijzonderheden-uitleg":{
+                "label": "Uitleg",
+                "type": "text",
+                "dependencies": {
+                  "bijzonderheden": "ja"
+                }
+            },
+            "bso":{
+                "label": "BSO?",
+                "removeDefaultNone": true
+            },
+            "kdv":{
+                "label": "KDV?",
+                "removeDefaultNone": true
+            },
+            "kdv-uitleg":{
+                "label": "Uitleg",
+                "type": "text",
+                "dependencies": {
+                  "kdv": "ja"
+                }
+            },
+            "logopedie":{
+                "label": "Logopedie?",
+                "removeDefaultNone": true
+            },
+            "gehoor":{
+                "label": "Gehoor?",
+                "removeDefaultNone": true
+            },
+            "vve":{
+                "label": "VVE?",
+                "removeDefaultNone": true
+            },
+            "aandacht-motorisch":{
+                "label": "Aandahct motorisch?",
+                "removeDefaultNone": true
+            },
+            "aandacht-motorisch-uitleg":{
+                "label": "Uitleg",
+                "type": "text",
+                "dependencies": {
+                  "aandacht-motorisch": "ja"
+                }
+            },
+            "zindelijk":{
+                "label": "Zindelijk?",
+                "removeDefaultNone": true
+            },
+            "zindelijk-herinnering":{
+                "label": "Zindelijk herinnering?",
+                "removeDefaultNone": true
+            },
+            "zindelijk-hulp":{
+                "label": "Zindelijk hulp?",
+                "removeDefaultNone": true
+            },
+            "eten-hulp":{
+                "label": "Eten hulp?",
+                "removeDefaultNone": true
+            },
+            "jas-hulp":{
+                "label": "Jas hulp?",
+                "removeDefaultNone": true
+            },
+            "schoenen-hulp":{
+                "label": "Schoenen hulp?",
+                "removeDefaultNone": true
+            },
+
+
+
+            "school-laatst-bezocht":{
+                "label": "Laatst bezochte school?",
+                "type": "text"
+            },
+            "school-adres":{
+                "label": "Adres?",
+                "type": "text"
+            },
+            "school-postcode":{
+                "label": "PC",
+                "type": "text"
+            },
+            "school-plaats":{
+                "label": "Plaats?",
+                "type": "text"
+            },
+            "school-tel":{
+                "label": "Tel?",
+                "type": "text"
+            },
+            "school-dir":{
+                "label": "Naam directeur?",
+                "type": "text"
+            },
+            "reden-aanmelding":{
+                "label": "Reden aanmelding?",
+                "type": "text"
+            },
+
+
+            "handtekening-verzorger-a":{
+                "label": "Handtekening a",
+                "type": "text"
+            },
+            "handtekening-verzorger-b":{
+                "label": "Handtekening b",
+                "type": "text"
+            },
+
             "age": {
                 "type": "number",
                 "label": "Age"
@@ -116,6 +640,6 @@ $(document).ready(function() {
         "options": options,
         "postRender": postRenderCallback,
         //"view": "bootstrap-edit"//,
-        "view": "bootstrap-edit-horizontal"
+        "view": "bootstrap-create"
     });
 });
