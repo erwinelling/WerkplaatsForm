@@ -57,6 +57,13 @@ $(document).ready(function() {
                 "required": true,
                 "default": "1/12/2015"
             },
+            "leeftijdscategorie":{
+                "type": "string",
+                "enum":[
+                    "Ouder dan 4",
+                    "Jonger dan 4",
+                ]
+            },
             "geboorteplaats":{
                 "type": "string",
                 "required": true
@@ -344,6 +351,9 @@ $(document).ready(function() {
             },
             "geboortedatum":{
                 "label": "Geboortedatum"
+            },
+            "leeftijdscategorie":{
+              "label": "Leeftijdscategorie",
             },
             "geboorteplaats":{
                 "label": "Geboorteplaats"
