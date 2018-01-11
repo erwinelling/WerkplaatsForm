@@ -52,8 +52,10 @@ $(document).ready(function() {
                 ]
             },
             "geboortedatum":{
+                "type": "text",
                 "format": "date",
-                "default": "1/12/2018"
+                "required": true,
+                "default": "1/12/2015"
             },
             "geboorteplaats":{
                 "type": "string",
@@ -158,12 +160,20 @@ $(document).ready(function() {
             "aandacht-soc-emo-uitleg":{
                 "type": "string"
             },
-            "bso":{
-                "type": "string",
-                "enum": ["ja", "nee"]
-            },
-            "bso-uitleg":{
-                "type": "string"
+            "ouderdan3":{
+                "type": "object",
+                "properties": {
+                    "bso":{
+                        "type": "string",
+                        "enum": ["ja", "nee"]
+                    },
+                    "bso-uitleg":{
+                        "type": "string"
+                    }
+                },
+                "dependencies": {
+                    "bso-uitleg": ["bso"],
+                },
             },
             "aandacht-spelen-leren":{
                 "type": "string",
@@ -296,12 +306,12 @@ $(document).ready(function() {
             }
         },
         "dependencies": {
+            "ouderdan3": ["geboortedatum"],
             "aandacht-soc-emo-uitleg": ["aandacht-soc-emo"],
             "aandacht-spelen-leren-uitleg": ["aandacht-spelen-leren"],
             "aandacht-gezichtsvermogen-uitleg": ["aandacht-gezichtsvermogen"],
             "onderzoeken-uitleg": ["onderzoeken"],
             "bijzonderheden-uitleg": ["bijzonderheden"],
-            "bso-uitleg": ["bso"],
             "kdv-uitleg": ["kdv"],
             "aandacht-motorisch-uitleg": ["aandacht-motorisch"]
         }
@@ -333,8 +343,7 @@ $(document).ready(function() {
                 "removeDefaultNone": true
             },
             "geboortedatum":{
-                "label": "Geboortedatum",
-                "type": "date"
+                "label": "Geboortedatum"
             },
             "geboorteplaats":{
                 "label": "Geboorteplaats"
@@ -392,9 +401,11 @@ $(document).ready(function() {
             },
             "thuissituatie":{
                 "label": "Thuissituatie",
+                "removeDefaultNone": true
             },
             "gezag":{
                 "label": "Bij wie ligt het gezag?",
+                "removeDefaultNone": true
             },
             "gezag-specifiek":{
                 "label": "Namelijk:",
@@ -427,15 +438,23 @@ $(document).ready(function() {
                   "aandacht-soc-emo": "ja"
                 }
             },
-            "bso":{
-                "label": "BSO?",
-                "removeDefaultNone": true
-            },
-            "bso-uitleg":{
-                "label": "Uitleg",
-                "type": "text",
+            "ouderdan3":{
+                "label": "Ouder dan 3?",
+                "fields": {
+                    "bso":{
+                        "label": "BSO?",
+                        "removeDefaultNone": true
+                    },
+                    "bso-uitleg":{
+                        "label": "Uitleg",
+                        "type": "text",
+                        "dependencies": {
+                            "bso": "ja"
+                        }
+                    }
+                },
                 "dependencies": {
-                  "bso": "ja"
+                    "aandacht-soc-emo": "ja"
                 }
             },
             "aandacht-spelen-leren":{
@@ -486,10 +505,10 @@ $(document).ready(function() {
                   "bijzonderheden": "ja"
                 }
             },
-            "bso":{
-                "label": "BSO?",
-                "removeDefaultNone": true
-            },
+            // "bso":{
+            //     "label": "BSO?",
+            //     "removeDefaultNone": true
+            // },
             "kdv":{
                 "label": "KDV?",
                 "removeDefaultNone": true
@@ -640,6 +659,6 @@ $(document).ready(function() {
         "options": options,
         "postRender": postRenderCallback,
         //"view": "bootstrap-edit"//,
-        "view": "bootstrap-create"
+        "view": {"parent":"bootstrap-create", "locale": "nl_BE"}
     });
 });
