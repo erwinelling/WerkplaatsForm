@@ -55,13 +55,13 @@ $(document).ready(function() {
                 "type": "text",
                 "format": "date",
                 "required": true,
-                "default": "1/12/2015"
+                "default": "01/01/2015"
             },
             "leeftijdscategorie":{
                 "type": "string",
                 "enum":[
-                    "Ouder dan 4",
-                    "Jonger dan 4",
+                  "jonger dan 4",
+                  "4 of ouder",
                 ]
             },
             "geboorteplaats":{
@@ -297,20 +297,6 @@ $(document).ready(function() {
             "handtekening-verzorger-b":{
                 "type": "string"
             },
-
-
-            "age": {
-                "type": "number",
-                "minimum": 0,
-                "maximum": 50
-            },
-            "phone": {
-                "type": "string"
-            },
-            "country": {
-                "type": "string",
-                "required": true
-            }
         },
         "dependencies": {
             "ouderdan3": ["geboortedatum"],
@@ -321,7 +307,7 @@ $(document).ready(function() {
             "bijzonderheden-uitleg": ["bijzonderheden"],
             "kdv-uitleg": ["kdv"],
             "aandacht-motorisch-uitleg": ["aandacht-motorisch"]
-        }
+        },
     };
 
     /**
@@ -350,10 +336,12 @@ $(document).ready(function() {
                 "removeDefaultNone": true
             },
             "geboortedatum":{
-                "label": "Geboortedatum"
+                "label": "Geboortedatum",
+                "dateFormat": "DD/MM/YYYY",
             },
             "leeftijdscategorie":{
               "label": "Leeftijdscategorie",
+              "removeDefaultNone": true
             },
             "geboorteplaats":{
                 "label": "Geboorteplaats"
@@ -618,19 +606,6 @@ $(document).ready(function() {
                 "label": "Handtekening b",
                 "type": "text"
             },
-
-            "age": {
-                "type": "number",
-                "label": "Age"
-            },
-            "phone": {
-                "type": "phone",
-                "label": "Phone"
-            },
-            "country": {
-                "type": "country",
-                "label": "Country"
-            }
         },
         "form": {
             "attributes": {
@@ -655,7 +630,21 @@ $(document).ready(function() {
      * @param control
      */
     var postRenderCallback = function(control) {
-
+          var geboortedatum = control.childrenByPropertyId["geboortedatum"];
+          var leeftijdscategorie = control.childrenByPropertyId["leeftijdscategorie"];
+          geboortedatum.on("blur", function() {
+              var geboren=moment(geboortedatum.getValue(), geboortedatum.options.dateFormat)
+              console.log(geboren)
+              var leeftijd=moment().diff(geboren, 'years');
+              console.log(leeftijd)
+              if (leeftijd >= 4) {
+                leeftijdscategorie.setValue(leeftijdscategorie.schema.enum[0])
+                console.log(leeftijdscategorie.schema.enum[0])
+              } else {
+                leeftijdscategorie.setValue(leeftijdscategorie.schema.enum[1])
+                console.log(leeftijdscategorie.schema.enum[1])
+              };
+          });
     };
 
     /**
