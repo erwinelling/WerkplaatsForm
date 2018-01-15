@@ -10,10 +10,6 @@ $(document).ready(function() {
      *
      */
     var data = {
-        "name": "Inigo Montoya",
-        "age": 29,
-        "phone": "414-111-2222",
-        "country": "usa"
     };
 
     /**
