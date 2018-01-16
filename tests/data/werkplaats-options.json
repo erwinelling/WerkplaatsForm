@@ -15,7 +15,7 @@
     "form": {
         "attributes": {
             "method": "post",
-            "action": "http://httpbin.org/post"
+            "action": "http://localhost/~erwinelling/Werkplaats/WerkplaatsForm/receiver.php"
         }
     }
 }
