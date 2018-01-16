@@ -1,15 +1,17 @@
-<html>
-<body>
-
 <?php
+require('./fpdf/mc_table.php');
 
-// Show all URL parameters (and
-// all form data submitted via the
-// 'get' method)
+$pdf=new PDF_MC_Table();
+$pdf->AddPage();
+$pdf->SetFont('Arial','',12);
+//Table with 20 rows and 4 columns
+$pdf->SetWidths(array(180));
+
 foreach($_POST as $key=>$value){
-    echo $key, ' => ', $value, "<br/>";
+      $pdf->SetFont('Arial','B',12);
+      $pdf->Row(array($key));
+      $pdf->SetFont(''); 
+      $pdf->Row(array($value));
 }
+$pdf->Output();
 ?>
-
-</body>
-</html>

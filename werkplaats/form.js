@@ -687,7 +687,7 @@ $(document).ready(function() {
         "form": {
             "attributes": {
                 "method": "POST",
-                "action": "http://httpbin.org/post",
+                "action": "./receiver.php",
                 "enctype": "multipart/form-data"
             },
             "buttons": {
