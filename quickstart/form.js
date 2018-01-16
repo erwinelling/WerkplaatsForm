@@ -70,7 +70,10 @@ $(document).ready(function() {
             },
             "postcode":{
                 "type": "string",
-                "required": true
+                "required": true,
+                "maxLength": 6,
+                "minLength": 6,
+                "pattern": "^[1-9][0-9]{3}[A-Za-z]{2}$",
             },
             "woonplaats":{
                 "type": "string",
@@ -79,6 +82,15 @@ $(document).ready(function() {
             "telefoonnummer":{
                 "type": "string",
                 "required": true
+            },
+            "thuissituatie":{
+                "type": "string",
+                "enum":[
+                    "samen",
+                    "een",
+                    "co"
+                ],
+                "default": "samen"
             },
             "verzorger-a":{
                 "type": "object",
@@ -121,14 +133,6 @@ $(document).ready(function() {
                         "required": true
                     },
                 },
-            },
-            "thuissituatie":{
-                "type": "string",
-                "enum":[
-                    "Samenwonend",
-                    "Een ouder gezin",
-                    "Co-ouderschap"
-                ]
             },
             "gezag":{
                 "type": "string",
@@ -275,7 +279,10 @@ $(document).ready(function() {
                         "type": "string"
                     },
                     "school-postcode":{
-                        "type": "string"
+                        "type": "string",
+                        "maxLength": 6,
+                        "minLength": 6,
+                        "pattern": "^[1-9][0-9]{3}[A-Za-z]{2}$",
                     },
                     "school-plaats":{
                         "type": "string"
@@ -311,6 +318,7 @@ $(document).ready(function() {
             "aandacht-gezichtsvermogen-uitleg": ["aandacht-gezichtsvermogen"],
             "onderzoeken-uitleg": ["onderzoeken"],
             "bijzonderheden-uitleg": ["bijzonderheden"],
+            "verzorger-b": ["thuissituatie"],
         },
     };
 
@@ -337,7 +345,7 @@ $(document).ready(function() {
             },
             "geslacht":{
                 "label": "Geslacht",
-                "removeDefaultNone": true
+                "removeDefaultNone": true,
             },
             "geboortedatum":{
                 "label": "Geboortedatum",
@@ -345,7 +353,9 @@ $(document).ready(function() {
             },
             "leeftijd":{
               "label": "Leeftijd",
-              "disabled": true
+              "disabled": true,
+              "type": "integer",
+              // "type": "hidden",
             },
             "geboorteplaats":{
                 "label": "Geboorteplaats"
@@ -365,6 +375,11 @@ $(document).ready(function() {
             },
             "telefoonnummer":{
                 "label": "Telefoonnummer",
+            },
+            "thuissituatie":{
+                "label": "Thuissituatie",
+                "removeDefaultNone": true,
+                "sort": false,
             },
             "verzorger-a":{
                 "label": "Verzorger A",
@@ -399,15 +414,15 @@ $(document).ready(function() {
                         "label": "Beroep",
                     },
                 },
-            },
-            "thuissituatie":{
-                "label": "Thuissituatie",
-                "removeDefaultNone": true
+                "dependencies": {
+                  "thuissituatie": ["samen", "co"]
+                }
             },
             "gezag":{
                 "label": "Bij wie ligt het gezag?",
                  "optionLabels": ["Beide ouders", "1 ouder, namelijk", "Anders, namelijk"],
-                "removeDefaultNone": true
+                "removeDefaultNone": true,
+                "sort": false,
             },
             "gezag-specifiek":{
                 "label": "Namelijk:",
@@ -420,12 +435,14 @@ $(document).ready(function() {
             },
             "aantal-kinderen":{
                 "label": "Uit hoeveel kinderen bestaat uw gezin?",
+                "type": "integer",
             },
             "leeftijd-kinderen":{
                 "label": "Leeftijd kinderen in uw gezin?",
             },
             "scholen-kinderen":{
                 "label": "Scholen kinderen in uw gezin?",
+                "type": "textarea",
             },
             "aandacht-soc-emo":{
                 "label": "Speciale aandacht soc-emo?",
@@ -433,6 +450,7 @@ $(document).ready(function() {
             },
             "aandacht-soc-emo-uitleg":{
                 "label": "Uitleg",
+                "type": "textarea",
                 "dependencies": {
                   "aandacht-soc-emo": "ja"
                 }
@@ -444,6 +462,7 @@ $(document).ready(function() {
             },
             "bso-uitleg":{
                 "label": "Uitleg",
+                "type": "textarea",
                 "dependencies": {
                     "bso": "ja"
                 }
@@ -455,6 +474,7 @@ $(document).ready(function() {
             },
             "aandacht-spelen-leren-uitleg":{
                 "label": "Uitleg",
+                "type": "textarea",
                 "dependencies": {
                   "aandacht-spelen-leren": "ja"
                 }
@@ -469,6 +489,7 @@ $(document).ready(function() {
             },
             "aandacht-gezichtsvermogen-uitleg":{
                 "label": "Uitleg",
+                "type": "textarea",
                 "dependencies": {
                   "aandacht-gezichtsvermogen": "ja"
                 }
@@ -479,6 +500,7 @@ $(document).ready(function() {
             },
             "onderzoeken-uitleg":{
                 "label": "Uitleg",
+                "type": "textarea",
                 "dependencies": {
                   "onderzoeken": "ja"
                 }
@@ -489,6 +511,7 @@ $(document).ready(function() {
             },
             "bijzonderheden-uitleg":{
                 "label": "Uitleg",
+                "type": "textarea",
                 "dependencies": {
                   "bijzonderheden": "ja"
                 }
@@ -506,6 +529,7 @@ $(document).ready(function() {
                     },
                     "kdv-uitleg":{
                         "label": "Uitleg",
+                        "type": "textarea",
                         "dependencies": {
                           "kdv": "ja"
                         }
@@ -528,6 +552,7 @@ $(document).ready(function() {
                     },
                     "aandacht-motorisch-uitleg":{
                         "label": "Uitleg",
+                        "type": "textarea",
                         "dependencies": {
                           "aandacht-motorisch": "ja"
                         }
@@ -574,6 +599,7 @@ $(document).ready(function() {
                     },
                     "school-postcode":{
                         "label": "PC",
+                        "disallowEmptySpaces": true,
                     },
                     "school-plaats":{
                         "label": "Plaats?",
@@ -586,6 +612,7 @@ $(document).ready(function() {
                     },
                     "reden-aanmelding":{
                         "label": "Reden aanmelding?",
+                        "type": "textarea",
                     },
                 },
                 "dependencies": {
@@ -665,10 +692,76 @@ $(document).ready(function() {
         "view": {
            "parent": "bootstrap-create",
            "locale": "nl_BE",
+            "fields": {
+              "/postcode": {
+                "messages": {
+                  "nl_BE": {
+                    "invalidPattern": "Vul een geldige postcode in."
+                  },
+                },
+              },
+              "/school-postcode": {
+                "messages": {
+                  "nl_BE": {
+                    "invalidPattern": "Vul een geldige postcode in."
+                  },
+                },
+              },
+            },
             "messages": {
                 "nl_BE": {
                     "invalidEmail": "Vul een geldig e-mailadres in, bijv. werkplaatsbo@wpkeesboeke.nl",
                 },
+            },
+            "layout":{
+              "template": 'http://localhost/~erwinelling/Werkplaats/WerkplaatsForm/quickstart/werkplaats-layout.html',
+              "bindings": {
+                // #kind-fields
+                // #verzorgers-fields
+                // #info-fields
+                // #verzorgers-fields
+                // #begeleiding-fields
+                // #gezin-fields
+                // #handtekening-fields
+                  "achternaam": "#kind-fields",
+                  "voornamen": "#kind-fields",
+                  "roepnaam": "kind-fields",
+                  "geslacht": "kind-fields",
+                  "geboortedatum": "kind-fields",
+                  "leeftijd": "kind-fields",
+                  "geboorteplaats": "kind-fields",
+                  "nationaliteit": "kind-fields",
+                  "adres": "kind-fields",
+                  "postcode": "kind-fields",
+                  "woonplaats": "kind-fields",
+                  "telefoonnummer": "kind-fields",
+                  "thuissituatie": "#verzorgers-fields",
+                  "verzorger-a": "#verzorgers-fields",
+                  "verzorger-b": "#verzorgers-fields",
+                  "gezag": "#verzorgers-fields",
+                  "gezag-specifiek": "#verzorgers-fields",
+                  "informatieochtend": "#info-fields",
+                  "aantal-kinderen": "#gezin-fields",
+                  "leeftijd-kinderen": "#gezin-fields",
+                  "scholen-kinderen": "#gezin-fields",
+                  "aandacht-soc-emo": "begeleiding-fields",
+                  "aandacht-soc-emo-uitleg": "begeleiding-fields",
+                  "bso": "#begeleiding-fields",
+                  "bso-uitleg": "#begeleiding-fields",
+                  "aandacht-spelen-leren": "#begeleiding-fields",
+                  "aandacht-spelen-leren-uitleg": "#begeleiding-fields",
+                  "dyslexie": "#begeleiding-fields",
+                  "aandacht-gezichtsvermogen": "#begeleiding-fields",
+                  "aandacht-gezichtsvermogen-uitleg": "#begeleiding-fields",
+                  "onderzoeken": "#begeleiding-fields",
+                  "onderzoeken-uitleg": "#begeleiding-fields",
+                  "bijzonderheden": "#begeleiding-fields",
+                  "bijzonderheden-uitleg": "#begeleiding-fields",
+                  "jongerdan5": "#begeleiding-fields",
+                  "ouderdan4": "#begeleiding-fields",
+                  "handtekening-verzorger-a": "#handtekening-fields",
+                  "handtekening-verzorger-b": "#handtekening-fields",
+              },
             },
         },
     });
