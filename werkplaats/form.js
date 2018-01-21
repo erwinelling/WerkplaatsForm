@@ -95,7 +95,6 @@ $(document).ready(function() {
                     "een",
                     "co"
                 ],
-                "default": "samen",
                 "required": true
             },
             "verzorger-a":{
@@ -155,7 +154,7 @@ $(document).ready(function() {
             },
             "informatieochtend":{
                 "type": "string",
-                "enum": ["ja", "nee"],
+                "enum": ["Ja", "Nee"],
                 "required": true
             },
 
@@ -172,7 +171,7 @@ $(document).ready(function() {
             },
             "scholen-kinderen":{
                 "type": "string",
-                "enum": ["ja", "nee", "n.v.t."]
+                "enum": ["Ja", "Nee"]
             },
             "school-kinderen-werkplaats":{
                 "type": "string"
@@ -183,7 +182,7 @@ $(document).ready(function() {
 
             "aandacht-soc-emo":{
                 "type": "string",
-                "enum": ["ja", "nee"],
+                "enum": ["Ja", "Nee"],
                 "required": true
             },
             "aandacht-soc-emo-uitleg":{
@@ -193,7 +192,7 @@ $(document).ready(function() {
 
             "bso":{
                 "type": "string",
-                "enum": ["ja", "nee"],
+                "enum": ["Ja", "Nee"],
                 "required": true
             },
             "bso-uitleg":{
@@ -202,7 +201,7 @@ $(document).ready(function() {
             },
             "aandacht-spelen-leren":{
                 "type": "string",
-                "enum": ["ja", "nee"],
+                "enum": ["Ja", "Nee"],
                 "required": true
             },
             "aandacht-spelen-leren-uitleg":{
@@ -211,12 +210,12 @@ $(document).ready(function() {
             },
             "dyslexie":{
                 "type": "string",
-                "enum": ["ja", "nee"],
+                "enum": ["Ja", "Nee"],
                 "required": true
             },
             "aandacht-gezichtsvermogen":{
                 "type": "string",
-                "enum": ["ja", "nee"],
+                "enum": ["Ja", "Nee"],
                 "required": true
             },
             "aandacht-gezichtsvermogen-uitleg":{
@@ -225,7 +224,7 @@ $(document).ready(function() {
             },
             "onderzoeken":{
                 "type": "string",
-                "enum": ["ja", "nee"],
+                "enum": ["Ja", "Nee"],
                 "required": true
             },
             "onderzoeken-uitleg":{
@@ -234,7 +233,7 @@ $(document).ready(function() {
             },
             "bijzonderheden":{
                 "type": "string",
-                "enum": ["ja", "nee"],
+                "enum": ["Ja", "Nee"],
                 "required": true
             },
             "bijzonderheden-uitleg":{
@@ -247,7 +246,7 @@ $(document).ready(function() {
                 "properties": {
                     "kdv":{
                         "type": "string",
-                        "enum": ["ja", "nee"],
+                        "enum": ["Ja", "Nee"],
                         "required": true
                     },
                     "kdv-uitleg":{
@@ -256,22 +255,22 @@ $(document).ready(function() {
                     },
                     "logopedie":{
                         "type": "string",
-                        "enum": ["ja", "nee"],
+                        "enum": ["Ja", "Nee"],
                         "required": true
                     },
                     "gehoor":{
                         "type": "string",
-                        "enum": ["ja", "nee"],
+                        "enum": ["Ja", "Nee"],
                         "required": true
                     },
                     "vve":{
                         "type": "string",
-                        "enum": ["ja", "nee"],
+                        "enum": ["Ja", "Nee"],
                         "required": true
                     },
                     "aandacht-motorisch":{
                         "type": "string",
-                        "enum": ["ja", "nee"],
+                        "enum": ["Ja", "Nee"],
                         "required": true
                     },
                     "aandacht-motorisch-uitleg":{
@@ -280,32 +279,32 @@ $(document).ready(function() {
                     },
                     "zindelijk":{
                         "type": "string",
-                        "enum": ["ja", "nee"],
+                        "enum": ["Ja", "Nee"],
                         "required": true
                     },
                     "zindelijk-herinnering":{
                         "type": "string",
-                        "enum": ["ja", "nee"],
+                        "enum": ["Ja", "Nee"],
                         "required": true
                     },
                     "zindelijk-hulp":{
                         "type": "string",
-                        "enum": ["ja", "nee"],
+                        "enum": ["Ja", "Nee"],
                         "required": true
                     },
                     "eten-hulp":{
                         "type": "string",
-                        "enum": ["ja", "nee"],
+                        "enum": ["Ja", "Nee"],
                         "required": true
                     },
                     "jas-hulp":{
                         "type": "string",
-                        "enum": ["ja", "nee"],
+                        "enum": ["Ja", "Nee"],
                         "required": true
                     },
                     "schoenen-hulp":{
                         "type": "string",
-                        "enum": ["ja", "nee"],
+                        "enum": ["Ja", "Nee"],
                         "required": true
                     },
                 },
@@ -378,6 +377,7 @@ $(document).ready(function() {
             "aandacht-gezichtsvermogen-uitleg": ["aandacht-gezichtsvermogen"],
             "onderzoeken-uitleg": ["onderzoeken"],
             "bijzonderheden-uitleg": ["bijzonderheden"],
+            "verzorger-a": ["thuissituatie"],
             "verzorger-b": ["thuissituatie"],
             "handtekening-verzorger-b-naam": ["thuissituatie"],
             "handtekening-verzorger-b": ["thuissituatie"],
@@ -409,7 +409,9 @@ $(document).ready(function() {
             },
             "geslacht":{
                 "label": "Geslacht",
-                "removeDefaultNone": true,
+                "hideNone": true,
+                "sort": false,
+                "vertical": false,
             },
             "geboortedatum":{
                 "label": "Geboortedatum",
@@ -445,9 +447,10 @@ $(document).ready(function() {
             },
             "thuissituatie":{
                 "label": "Thuissituatie",
-                "removeDefaultNone": true,
-                "sort": false,
                 "optionLabels": ["Twee ouders", "Eenoudergezin", "Co-ouderschap"],
+                "hideNone": true,
+                "sort": false,
+                "vertical": false,
             },
             "verzorger-a":{
                 "label": "Verzorger A",
@@ -465,6 +468,9 @@ $(document).ready(function() {
                         "label": "Beroep",
                     },
                 },
+                "dependencies": {
+                  "thuissituatie": ["samen", "co", "een"]
+                }
             },
             "verzorger-b":{
                 "label": "Verzorger B",
@@ -489,8 +495,9 @@ $(document).ready(function() {
             "gezag":{
                 "label": "Bij wie ligt het gezag?",
                  "optionLabels": ["Beide ouders", "Één ouder", "Anders"],
-                "removeDefaultNone": true,
-                "sort": false,
+                 "hideNone": true,
+                 "sort": false,
+                 "vertical": false,
             },
             "gezag-specifiek":{
                 "label": "Namelijk:",
@@ -500,7 +507,9 @@ $(document).ready(function() {
             },
             "informatieochtend":{
                 "label": "Is deze ochtend door u bezocht?",
-                "removeDefaultNone": true,
+                "hideNone": true,
+                "sort": false,
+                "vertical": false,
             },
             "aantal-kinderen":{
                 "label": "Uit hoeveel kinderen bestaat uw gezin?",
@@ -514,8 +523,9 @@ $(document).ready(function() {
             },
             "scholen-kinderen":{
                 "label": "Bezoeken meerdere kinderen uit het gezin de Werkplaats?",
-                "removeDefaultNone": true,
+                "hideNone": true,
                 "sort": false,
+                "vertical": false,
             },
             "school-kinderen-werkplaats":{
                 "label": "Welke klassen?",
@@ -531,7 +541,9 @@ $(document).ready(function() {
             },
             "aandacht-soc-emo":{
                 "label": "Is speciale aandacht nodig voor de sociaal emotionele ontwikkeling op de basisschool?",
-                "removeDefaultNone": true
+                "hideNone": true,
+                "sort": false,
+                "vertical": false,
             },
             "aandacht-soc-emo-uitleg":{
                 "label": "Welk gedrag kan de medewerker verwachten van uw kind en welke adviezen/tips heeft u voor de medewerker om met het betreffende gedrag goed om te gaan?",
@@ -543,7 +555,9 @@ $(document).ready(function() {
 
             "bso":{
                 "label": "Gaat uw kind gebruik maken van BSO (buitenschoolse opvang)?",
-                "removeDefaultNone": true
+                "hideNone": true,
+                "sort": false,
+                "vertical": false,
             },
             "bso-uitleg":{
                 "label": "Bij welke BSO?",
@@ -555,7 +569,9 @@ $(document).ready(function() {
 
             "aandacht-spelen-leren":{
                 "label": "Is er speciale aandacht nodig voor spelen/leren op de basisschool?",
-                "removeDefaultNone": true
+                "hideNone": true,
+                "sort": false,
+                "vertical": false,
             },
             "aandacht-spelen-leren-uitleg":{
                 "label": "Welk gedrag kan de medewerker verwachten van uw kind en welke adviezen/tips heeft u voor de medewerker om hiermee goed om te gaan?",
@@ -566,11 +582,15 @@ $(document).ready(function() {
             },
             "dyslexie":{
                 "label": "Is er sprake van dyslexie in de familie?",
-                "removeDefaultNone": true
+                "hideNone": true,
+                "sort": false,
+                "vertical": false,
             },
             "aandacht-gezichtsvermogen":{
                 "label": "Zijn er bijzonderheden bij uw kind, denk daarbij aan gezichtsvermogen, ziekten, allergieën, medicijngebruik e.d.?",
-                "removeDefaultNone": true
+                "hideNone": true,
+                "sort": false,
+                "vertical": false,
             },
             "aandacht-gezichtsvermogen-uitleg":{
                 "label": "Welke?",
@@ -581,7 +601,9 @@ $(document).ready(function() {
             },
             "onderzoeken":{
                 "label": "Hebben er onderzoeken plaatsgevonden die voor ons als school relevant zijn?",
-                "removeDefaultNone": true
+                "hideNone": true,
+                "sort": false,
+                "vertical": false,
             },
             "onderzoeken-uitleg":{
                 "label": "Zo ja welke en waarom?",
@@ -592,7 +614,9 @@ $(document).ready(function() {
             },
             "bijzonderheden":{
                 "label": "Zijn er bijzondere gebeurtenissen geweest, denk daarbij aan ongevallen, scheiding of overlijden.",
-                "removeDefaultNone": true
+                "hideNone": true,
+                "sort": false,
+                "vertical": false,
             },
             "bijzonderheden-uitleg":{
                 "label": "Welke?",
@@ -610,7 +634,9 @@ $(document).ready(function() {
                 "fields": {
                     "kdv":{
                         "label": "Heeft uw kind gebruik gemaakt van een kinderdagverblijf/peuterspeelzaal?",
-                        "removeDefaultNone": true
+                        "hideNone": true,
+                        "sort": false,
+                        "vertical": false,
                     },
                     "kdv-uitleg":{
                         "label": "Bij welk kinderdagverblijf/peuterspeelzaal?",
@@ -620,19 +646,27 @@ $(document).ready(function() {
                     },
                     "logopedie":{
                         "label": "Krijgt uw kind logopedie?",
-                        "removeDefaultNone": true
+                        "hideNone": true,
+                        "sort": false,
+                        "vertical": false,
                     },
                     "gehoor":{
                         "label": "Zijn er bij uw kind buisjes geplaatst of zijn er gehoorproblemen?",
-                        "removeDefaultNone": true
+                        "hideNone": true,
+                        "sort": false,
+                        "vertical": false,
                     },
                     "vve":{
                         "label": "Heeft uw kind deelgenomen aan een voorschools educatie-programma (VVE) en /of taalstimuleringsprogramma?",
-                        "removeDefaultNone": true
+                        "hideNone": true,
+                        "sort": false,
+                        "vertical": false,
                     },
                     "aandacht-motorisch":{
                         "label": "Is speciale aandacht nodig voor de motorische ontwikkeling op de basisschool?",
-                        "removeDefaultNone": true
+                        "hideNone": true,
+                        "sort": false,
+                        "vertical": false,
                     },
                     "aandacht-motorisch-uitleg":{
                         "label": "Welke bijzonderheden in de ontwikkeling waren/zijn er en welke adviezen heeft u voor de medewerker?",
@@ -643,27 +677,39 @@ $(document).ready(function() {
                     },
                     "zindelijk":{
                         "label": "Is uw kind zindelijk?",
-                        "removeDefaultNone": true
+                        "hideNone": true,
+                        "sort": false,
+                        "vertical": false,
                     },
                     "zindelijk-herinnering":{
                         "label": "Is uw kind zindelijk maar moet nog wel herinnerd worden om naar de wc te gaan?",
-                        "removeDefaultNone": true
+                        "hideNone": true,
+                        "sort": false,
+                        "vertical": false,
                     },
                     "zindelijk-hulp":{
                         "label": "Is uw kind zindelijk, maar heeft nog hulp nodig op de wc?",
-                        "removeDefaultNone": true
+                        "hideNone": true,
+                        "sort": false,
+                        "vertical": false,
                     },
                     "eten-hulp":{
                         "label": "Heeft uw kind hulp nodig bij eten en drinken?",
-                        "removeDefaultNone": true
+                        "hideNone": true,
+                        "sort": false,
+                        "vertical": false,
                     },
                     "jas-hulp":{
                         "label": "Kan uw kind zelf zijn/haar jas aan- en uitdoen?",
-                        "removeDefaultNone": true
+                        "hideNone": true,
+                        "sort": false,
+                        "vertical": false,
                     },
                     "schoenen-hulp":{
                         "label": "Kan uw kind zelf schoenen aan- en uitdoen?",
-                        "removeDefaultNone": true
+                        "hideNone": true,
+                        "sort": false,
+                        "vertical": false,
                     },
                 },
                 "dependencies": {
