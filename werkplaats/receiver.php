@@ -1,5 +1,11 @@
 <?php
+use PHPMailer\PHPMailer\PHPMailer;
+use PHPMailer\PHPMailer\Exception;
+
 require('./fpdf/mc_table.php');
+require './PHPMailer/src/Exception.php';
+require './PHPMailer/src/PHPMailer.php';
+require './PHPMailer/src/SMTP.php';
 
 $pdf=new PDF_MC_Table();
 $pdf->AddPage();
@@ -10,8 +16,13 @@ $pdf->SetWidths(array(180));
 foreach($_POST as $key=>$value){
       $pdf->SetFont('Arial','B',12);
       $pdf->Row(array($key));
-      $pdf->SetFont(''); 
+      $pdf->SetFont('');
       $pdf->Row(array($value));
 }
-$pdf->Output();
+$depdf = $pdf->Output();
+
+
+
+
+
 ?>

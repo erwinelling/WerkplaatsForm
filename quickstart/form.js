@@ -45,33 +45,32 @@ $(document).ready(function() {
                 "enum":[
                     "Jongen",
                     "Meisje"
-                ],
-                "required": true
+                ]
             },
             "geboortedatum":{
                 "type": "text",
                 "format": "date",
-                "default": "01/01/2015",
-                "required": true
+                "required": true,
+                "default": "01/01/2015"
             },
             "leeftijd":{
                 "type": "string",
             },
             "geboorteplaats":{
                 "type": "string",
-                "required": true,
+                "required": true
             },
             "nationaliteit":{
                 "type": "string",
-                "required": true,
+                "required": true
             },
             "bsn":{
                 "type": "string",
-                "required": true,
+                "required": true
             },
             "adres":{
                 "type": "string",
-                "required": true,
+                "required": true
             },
             "postcode":{
                 "type": "string",
@@ -95,8 +94,7 @@ $(document).ready(function() {
                     "een",
                     "co"
                 ],
-                "default": "samen",
-                "required": true
+                "default": "samen"
             },
             "verzorger-a":{
                 "type": "object",
@@ -146,23 +144,19 @@ $(document).ready(function() {
                     "2",
                     "1",
                     "anders"
-                ],
-                "required": true
+                ]
             },
             "gezag-specifiek":{
                 "type": "string",
-                "required": true
             },
             "informatieochtend":{
                 "type": "string",
-                "enum": ["ja", "nee"],
-                "required": true
+                "enum": ["ja", "nee"]
             },
 
 
             "aantal-kinderen":{
-                "type": "string",
-                "required": true
+                "type": "string"
             },
             "leeftijd-zussen":{
                 "type": "string"
@@ -183,63 +177,50 @@ $(document).ready(function() {
 
             "aandacht-soc-emo":{
                 "type": "string",
-                "enum": ["ja", "nee"],
-                "required": true
+                "enum": ["ja", "nee"]
             },
             "aandacht-soc-emo-uitleg":{
-                "type": "string",
-                "required": true
+                "type": "string"
             },
 
             "bso":{
                 "type": "string",
-                "enum": ["ja", "nee"],
-                "required": true
+                "enum": ["ja", "nee"]
             },
             "bso-uitleg":{
-                "type": "string",
-                "required": true
+                "type": "string"
             },
             "aandacht-spelen-leren":{
                 "type": "string",
-                "enum": ["ja", "nee"],
-                "required": true
+                "enum": ["ja", "nee"]
             },
             "aandacht-spelen-leren-uitleg":{
-                "type": "string",
-                "required": true
+                "type": "string"
             },
             "dyslexie":{
                 "type": "string",
-                "enum": ["ja", "nee"],
-                "required": true
+                "enum": ["ja", "nee"]
             },
             "aandacht-gezichtsvermogen":{
                 "type": "string",
-                "enum": ["ja", "nee"],
-                "required": true
+                "enum": ["ja", "nee"]
             },
             "aandacht-gezichtsvermogen-uitleg":{
-                "type": "string",
-                "required": true
+                "type": "string"
             },
             "onderzoeken":{
                 "type": "string",
-                "enum": ["ja", "nee"],
-                "required": true
+                "enum": ["ja", "nee"]
             },
             "onderzoeken-uitleg":{
-                "type": "string",
-                "required": true
+                "type": "string"
             },
             "bijzonderheden":{
-                "type": "string",
-                "enum": ["ja", "nee"],
-                "required": true
+              "type": "string",
+              "enum": ["ja", "nee"]
             },
             "bijzonderheden-uitleg":{
-                "type": "string",
-                "required": true
+                "type": "string"
             },
 
             "jongerdan5":{
@@ -247,66 +228,53 @@ $(document).ready(function() {
                 "properties": {
                     "kdv":{
                         "type": "string",
-                        "enum": ["ja", "nee"],
-                        "required": true
+                        "enum": ["ja", "nee"]
                     },
                     "kdv-uitleg":{
-                        "type": "string",
-                        "required": true
+                        "type": "string"
                     },
                     "logopedie":{
                         "type": "string",
-                        "enum": ["ja", "nee"],
-                        "required": true
+                        "enum": ["ja", "nee"]
                     },
                     "gehoor":{
                         "type": "string",
-                        "enum": ["ja", "nee"],
-                        "required": true
+                        "enum": ["ja", "nee"]
                     },
                     "vve":{
                         "type": "string",
-                        "enum": ["ja", "nee"],
-                        "required": true
+                        "enum": ["ja", "nee"]
                     },
                     "aandacht-motorisch":{
                         "type": "string",
-                        "enum": ["ja", "nee"],
-                        "required": true
+                        "enum": ["ja", "nee"]
                     },
                     "aandacht-motorisch-uitleg":{
-                        "type": "string",
-                        "required": true
+                        "type": "string"
                     },
                     "zindelijk":{
                         "type": "string",
-                        "enum": ["ja", "nee"],
-                        "required": true
+                        "enum": ["ja", "nee"]
                     },
                     "zindelijk-herinnering":{
                         "type": "string",
-                        "enum": ["ja", "nee"],
-                        "required": true
+                        "enum": ["ja", "nee"]
                     },
                     "zindelijk-hulp":{
                         "type": "string",
-                        "enum": ["ja", "nee"],
-                        "required": true
+                        "enum": ["ja", "nee"]
                     },
                     "eten-hulp":{
                         "type": "string",
-                        "enum": ["ja", "nee"],
-                        "required": true
+                        "enum": ["ja", "nee"]
                     },
                     "jas-hulp":{
                         "type": "string",
-                        "enum": ["ja", "nee"],
-                        "required": true
+                        "enum": ["ja", "nee"]
                     },
                     "schoenen-hulp":{
                         "type": "string",
-                        "enum": ["ja", "nee"],
-                        "required": true
+                        "enum": ["ja", "nee"]
                     },
                 },
                 "dependencies": {
@@ -319,35 +287,28 @@ $(document).ready(function() {
                 "type": "object",
                 "properties": {
                     "school-laatst-bezocht":{
-                        "type": "string",
-                        "required": true
+                        "type": "string"
                     },
                     "school-adres":{
-                        "type": "string",
-                        "required": true
+                        "type": "string"
                     },
                     "school-postcode":{
                         "type": "string",
                         "maxLength": 6,
                         "minLength": 6,
                         "pattern": "^[1-9][0-9]{3}[A-Za-z]{2}$",
-                        "required": true
                     },
                     "school-plaats":{
-                        "type": "string",
-                        "required": true
+                        "type": "string"
                     },
                     "school-tel":{
-                        "type": "string",
-                        "required": true
+                        "type": "string"
                     },
                     "school-dir":{
-                        "type": "string",
-                        "required": true
+                        "type": "string"
                     },
                     "reden-aanmelding":{
-                        "type": "string",
-                        "required": true
+                        "type": "string"
                     },
                 },
                 "dependencies": {
@@ -357,15 +318,13 @@ $(document).ready(function() {
                 "type": "string"
             },
             "handtekening-verzorger-a":{
-                "type": "string",
-                "required": true
+                "type": "string"
             },
             "handtekening-verzorger-b-naam":{
                 "type": "string"
             },
             "handtekening-verzorger-b":{
-                "type": "string",
-                "required": true
+                "type": "string"
             },
         },
         "dependencies": {
@@ -710,7 +669,6 @@ $(document).ready(function() {
             },
             "handtekening-verzorger-a":{
                 "label": "Handtekening verzorger A",
-                "disabled": true,
             },
             "handtekening-verzorger-b-naam":{
                 "label": "Naam verzorger B",
@@ -721,7 +679,6 @@ $(document).ready(function() {
             },
             "handtekening-verzorger-b":{
                 "label": "Handtekening verzorger B",
-                "disabled": true,
                 "dependencies": {
                   "thuissituatie": ["samen", "co"]
                 }
@@ -730,7 +687,7 @@ $(document).ready(function() {
         "form": {
             "attributes": {
                 "method": "POST",
-                "action": "./receiver.php",
+                "action": "http://httpbin.org/post",
                 "enctype": "multipart/form-data"
             },
             "buttons": {
@@ -788,24 +745,6 @@ $(document).ready(function() {
               handtekeningverzorgerbnaam.setValue(naamverzorgerb.getValue());
           });
 
-          $('.js-signature-a').jqSignature();
-          $('.js-signature-a').on('jq.signature.changed', function() {
-              var dataUrl = $('.js-signature-a').jqSignature('getDataURL');
-              var img = $('<img>').attr('src', dataUrl)
-              // $('.js-signature-a').append($('<p>').text("Here's your signature:"));
-              // $('.js-signature-a').append(img);
-              var handtekeningverzorgera = control.childrenByPropertyId["handtekening-verzorger-a"];
-              handtekeningverzorgera.setValue(dataUrl);
-          });
-          $('.js-signature-b').jqSignature();
-          $('.js-signature-b').on('jq.signature.changed', function() {
-              var dataUrl = $('.js-signature-b').jqSignature('getDataURL');
-              var img = $('<img>').attr('src', dataUrl)
-              // $('.js-signature-b').append($('<p>').text("Here's your signature:"));
-              // $('.js-signature-b').append(img);
-              var handtekeningverzorgerb = control.childrenByPropertyId["handtekening-verzorger-b"];
-              handtekeningverzorgerb.setValue(dataUrl);
-          });
     };
 
     /**
@@ -900,4 +839,5 @@ $(document).ready(function() {
             },
         },
     });
+$('.js-signature').jqSignature();
 });
