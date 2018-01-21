@@ -343,7 +343,8 @@
             }
         },
         "handtekening-verzorger-a-naam":{
-            "label": "Naam verzorger A"
+            "label": "Naam verzorger A",
+            "disabled": true
         },
         "handtekening-verzorger-a":{
             "label": "Handtekening verzorger A",
@@ -351,6 +352,7 @@
         },
         "handtekening-verzorger-b-naam":{
             "label": "Naam verzorger B",
+            "disabled": true,
             "dependencies": {
               "thuissituatie": ["samen", "co"]
             }

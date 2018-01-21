@@ -1,10 +1,11 @@
 # TODO
 
-* wizard?
-* move submit button
+* make age and signatures invisible
+* cleanup signatures
 * create php file that generates pdf
 * create php file that sends email
-* npm, grunt, minify?
+* wizard?
+* move submit button
 
 
 
