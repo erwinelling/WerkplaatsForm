@@ -21,8 +21,7 @@
         },
         "leeftijd":{
           "label": "Leeftijd",
-          "disabled": true,
-          "type": "integer"
+          "type": "hidden"
         },
         "geboorteplaats":{
             "label": "Geboorteplaats"
@@ -48,14 +47,14 @@
         },
         "thuissituatie":{
             "label": "Thuissituatie",
-            "optionLabels": ["Twee ouders", "Eenoudergezin", "Co-ouderschap"],
+            "optionLabels": {"samen":"Twee ouders", "een":"Eenoudergezin", "co":"Co-ouderschap"},
             "hideNone": true,
             "sort": false,
             "vertical": true
         },
         "gezag":{
             "label": "Bij wie ligt het gezag?",
-             "optionLabels": ["Beide ouders", "Één ouder", "Anders"],
+             "optionLabels": {"2":"Beide ouders", "1":"Één ouder", "anders":"Anders"},
              "hideNone": true,
              "sort": false,
              "vertical": true
@@ -344,25 +343,27 @@
         },
         "handtekening-verzorger-a-naam":{
             "label": "Naam verzorger A",
-            "disabled": true
+            "type": "hidden"
         },
         "handtekening-verzorger-a":{
             "label": "Handtekening verzorger A",
-            "disabled": true
+            "type": "hidden"
         },
         "handtekening-verzorger-b-naam":{
             "label": "Naam verzorger B",
             "disabled": true,
             "dependencies": {
               "thuissituatie": ["samen", "co"]
-            }
+            },
+            "type": "hidden"
         },
         "handtekening-verzorger-b":{
             "label": "Handtekening verzorger B",
             "disabled": true,
             "dependencies": {
               "thuissituatie": ["samen", "co"]
-            }
+            },
+            "type": "hidden"
         }
     },
     "form": {
@@ -373,8 +374,7 @@
         },
         "buttons": {
             "submit": {
-                "value": "Verstuur",
-                "styles": "btn btn-primary"
+                "value": "Verstuur"
             }
         }
     }

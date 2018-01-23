@@ -114,7 +114,7 @@ $(document).ready(function() {
         "data": data,
         "schema": "./data/werkplaats-schema.json",
         "options": "./data/werkplaats-options.json",
-        "postRender": postRenderCallback,
-        "view": "./data/werkplaats-view.json"
+        "view": "./data/werkplaats-view.json",
+        "postRender": postRenderCallback
     });
 });

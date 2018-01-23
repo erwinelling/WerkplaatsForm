@@ -1,12 +1,14 @@
 # TODO
 
-* make age and signatures invisible
-* cleanup signatures
-* create php file that generates pdf
-* create php file that sends email
-* wizard?
-* move submit button
+* cleanup/ refactor signature fields
+* test include in normal html file
 
+* create php file that sends email
+* Move submit button
+
+* Send with ajax + error messages
+* Wizard?
+* PDF mooier maken
 
 
 # scripts
