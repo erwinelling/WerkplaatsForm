@@ -342,8 +342,7 @@
             }
         },
         "handtekening-verzorger-a-naam":{
-            "label": "Naam verzorger A",
-            "type": "hidden"
+            "label": "Naam verzorger A"
         },
         "handtekening-verzorger-a":{
             "label": "Handtekening verzorger A",
@@ -351,11 +350,9 @@
         },
         "handtekening-verzorger-b-naam":{
             "label": "Naam verzorger B",
-            "disabled": true,
             "dependencies": {
               "thuissituatie": ["samen", "co"]
-            },
-            "type": "hidden"
+            }
         },
         "handtekening-verzorger-b":{
             "label": "Handtekening verzorger B",
@@ -369,7 +366,7 @@
     "form": {
         "attributes": {
             "method": "POST",
-            "action": "./receiver.php",
+            "action": "http://een.expert/werkplaats/receiver.php",
             "enctype": "multipart/form-data"
         },
         "buttons": {

@@ -112,9 +112,9 @@ $(document).ready(function() {
      */
     $("#form").alpaca({
         "data": data,
-        "schema": "./data/werkplaats-schema.json",
-        "options": "./data/werkplaats-options.json",
-        "view": "./data/werkplaats-view.json",
+        "schema": "http://een.expert/werkplaats/data/werkplaats-schema.json",
+        "options": "http://een.expert/werkplaats/data/werkplaats-options.json",
+        "view": "http://een.expert/data/werkplaats-view.json",
         "postRender": postRenderCallback
     });
 });

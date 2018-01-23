@@ -15,6 +15,16 @@
             "invalidPattern": "Vul een geldige postcode in."
           }
         }
+      },
+      "/handtekening-verzorger-a-naam":{
+        "templates": {
+          "control": "http://een.expert/werkplaats/control-text-signature-a.html"
+        }
+      },
+      "/handtekening-verzorger-b-naam":{
+        "templates": {
+          "control": "http://een.expert/werkplaats/control-text-signature-b.html"
+        }
       }
     },
     "messages": {
@@ -23,7 +33,7 @@
         }
     },
     "layout":{
-      "template": "./werkplaats-layout.html",
+      "template": "http://een.expert/werkplaats/werkplaats-layout.html",
       "bindings": {
           "achternaam": "#kind-fields",
           "voornamen": "#kind-fields",
@@ -65,10 +75,10 @@
           "bijzonderheden-uitleg": "#begeleiding-fields",
           "jongerdan5": "#begeleiding-fields",
           "ouderdan4": "#begeleiding-fields",
-          "handtekening-verzorger-a-naam": "#handtekening-fields",
-          "handtekening-verzorger-a": "#handtekening-fields",
-          "handtekening-verzorger-b-naam": "#handtekening-fields",
-          "handtekening-verzorger-b": "#handtekening-fields"
+          "handtekening-verzorger-a-naam": "#handtekening-verzorger-a-fields",
+          "handtekening-verzorger-a": "#handtekening-verzorger-a-fields",
+          "handtekening-verzorger-b-naam": "#handtekening-verzorger-b-fields",
+          "handtekening-verzorger-b": "#handtekening-verzorger-b-fields"
       }
     }
 }

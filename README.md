@@ -1,14 +1,12 @@
 # TODO
 
-* cleanup/ refactor signature fields
-* test include in normal html file
-
-* create php file that sends email
-* Move submit button
-
-* Send with ajax + error messages
+* move submit button?
 * Wizard?
+* change all http://localhost/~erwinelling/Werkplaats/WerkplaatsForm/werkplaats/ references
+* create php file that sends email
+* Send with ajax + sumit message
 * PDF mooier maken
+* combina all js files
 
 
 # scripts
