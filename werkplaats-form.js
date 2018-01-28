@@ -36,7 +36,7 @@ $(document).ready(function() {
      * @see http://www.alpacajs.org
      *
      */
-      var options =
+      var options = {}
 
 
 
