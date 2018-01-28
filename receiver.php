@@ -5,11 +5,11 @@ $string = file_get_contents("data/werkplaats-options.json");
 $json_a = json_decode($string, true);
 $html = "";
 
-function show_nice_form_values($post, $json, $html) {
+function show_nice_form_values($post, $json, $prepend_key="") {
   foreach($json['fields'] as $key=>$value){
     if (array_key_exists('fields', $json['fields'][$key])) {
       // this is a nested array, with more form fields, so do something recursive here
-      $html .= show_nice_form_values($post, $value, "");
+      $html .= show_nice_form_values($post, $value, $key);
     }
     else {
       if (array_key_exists('label', $json['fields'][$key])) {
@@ -18,7 +18,7 @@ function show_nice_form_values($post, $json, $html) {
         $html .= $json['fields'][$key]['label'];
         $html .= "</b><br/>";
       }
-      if (array_key_exists($key, $post)) {
+      if (array_key_exists($key, $post) || array_key_exists($prepend_key . "_" . $key, $post)) {
         // only show value if it is available in POST vars
         if ($key == "handtekening-verzorger-a" || $key == "handtekening-verzorger-b") {
           // display signature as image
@@ -28,10 +28,15 @@ function show_nice_form_values($post, $json, $html) {
           // print optionLabel from radiobuttons in form instead of raw value from POST
           $html .= $json['fields'][$key]['optionLabels'][$post[$key]];
           // $html .= "OPTIONLABEL" . $_POST[$key] . " - " . $input[$key]['optionLabels'][$_POST[$key]];
-        } elseif ($post[$key] == ""){
+        } elseif ($post[$key] == "" && $post[$prepend_key . "_" . $key] == "") {
           $html .= "-";
         } else {
-          $html .= $post[$key];
+          if ($prepend_key!=="") {
+            $html .= $post[$prepend_key . "_" . $key];
+          }
+          else {
+            $html .= $post[$key];
+          }
         }
       } else {
         $html .= "-";
@@ -42,14 +47,14 @@ function show_nice_form_values($post, $json, $html) {
   return $html;
 }
 
-$pdf_data = show_nice_form_values($_POST, $json_a, "");
-
+$pdf_data = show_nice_form_values($_POST, $json_a);
+// print $pdf_data;
 
 
 
 
 // Include the main TCPDF library (search for installation path).
-require_once('TCPDF/tcpdf.php');
+require_once('phplib/TCPDF/tcpdf.php');
 
 // Extend the TCPDF class to create custom Header and Footer
 class MYPDF extends TCPDF {
@@ -99,8 +104,8 @@ $pdf->setFooterFont(Array(PDF_FONT_NAME_DATA, '', PDF_FONT_SIZE_DATA));
 $pdf->SetDefaultMonospacedFont(PDF_FONT_MONOSPACED);
 
 // set margins
-$pdf->SetMargins(PDF_MARGIN_LEFT, PDF_MARGIN_TOP, PDF_MARGIN_RIGHT);
-$pdf->SetHeaderMargin(PDF_MARGIN_HEADER);
+$pdf->SetMargins(PDF_MARGIN_LEFT, PDF_MARGIN_TOP+5, PDF_MARGIN_RIGHT);
+$pdf->SetHeaderMargin(PDF_MARGIN_HEADER+5);
 $pdf->SetFooterMargin(PDF_MARGIN_FOOTER);
 
 // set auto page breaks

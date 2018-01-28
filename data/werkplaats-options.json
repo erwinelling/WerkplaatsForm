@@ -366,7 +366,7 @@
     "form": {
         "attributes": {
             "method": "POST",
-            "action": "http://een.expert/werkplaats/receiver.php",
+            "action": "http://localhost/~erwinelling/Werkplaats/WerkplaatsForm/receiver.php",
             "enctype": "multipart/form-data"
         },
         "buttons": {

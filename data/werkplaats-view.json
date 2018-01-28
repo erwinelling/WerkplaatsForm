@@ -18,12 +18,12 @@
       },
       "/handtekening-verzorger-a-naam":{
         "templates": {
-          "control": "http://een.expert/werkplaats/control-text-signature-a.html"
+          "control": "http://localhost/~erwinelling/Werkplaats/WerkplaatsForm/templates/control-text-signature-a.html"
         }
       },
       "/handtekening-verzorger-b-naam":{
         "templates": {
-          "control": "http://een.expert/werkplaats/control-text-signature-b.html"
+          "control": "http://localhost/~erwinelling/Werkplaats/WerkplaatsForm/templates/control-text-signature-b.html"
         }
       }
     },
@@ -33,7 +33,7 @@
         }
     },
     "layout":{
-      "template": "http://een.expert/werkplaats/werkplaats-layout.html",
+      "template": "http://localhost/~erwinelling/Werkplaats/WerkplaatsForm/templates/werkplaats-layout.html",
       "bindings": {
           "achternaam": "#kind-fields",
           "voornamen": "#kind-fields",
