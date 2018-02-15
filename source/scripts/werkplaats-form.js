@@ -1,4 +1,4 @@
-// @codekit-prepend ""
+// @codekit-prepend "../../bower_components/jquery/dist/jquery.min.js", , "../../bower_components/bootstrap/dist/js/bootstrap.min.js", "../../bower_components/handlebars/handlebars.min.js", "../../bower_components/jq-signature/jq-signature.min.js", "../../bower_components/alpaca/dist/alpaca/bootstrap/alpaca.min.js", "../../bower_components/moment/min/moment-with-locales.min.js", "../../bower_components/eonasdan-bootstrap-datetimepicker/build/js/bootstrap-datetimepicker.min.js";
 $(document).ready(function() {
 
 	  // Alpaca.logLevel = Alpaca.DEBUG;
