@@ -86,6 +86,5 @@
   },
   "_source": "https://github.com/gitana/alpaca.git",
   "_target": "1.5.23",
-  "_originalSource": "alpaca",
-  "_direct": true
+  "_originalSource": "alpaca"
 }

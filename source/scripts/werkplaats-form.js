@@ -1,7 +1,78 @@
-// @codekit-prepend "../../bower_components/jquery/dist/jquery.min.js", , "../../bower_components/bootstrap/dist/js/bootstrap.min.js", "../../bower_components/handlebars/handlebars.min.js", "../../bower_components/jq-signature/jq-signature.min.js", "../../bower_components/alpaca/dist/alpaca/bootstrap/alpaca.min.js", "../../bower_components/moment/min/moment-with-locales.min.js", "../../bower_components/eonasdan-bootstrap-datetimepicker/build/js/bootstrap-datetimepicker.min.js";
+// @codekit-prepend "../../bower_components/jquery/dist/jquery.js", "../../bower_components/moment/min/moment.min.js", "../../bower_components/bootstrap/dist/js/bootstrap.js", "../../bower_components/handlebars/handlebars.js", "../../bower_components/alpaca/dist/alpaca/bootstrap/alpaca.js", "../../bower_components/jq-signature/jq-signature.js", "../../bower_components/eonasdan-bootstrap-datetimepicker/build/js/bootstrap-datetimepicker.min.js"
 $(document).ready(function() {
 
 	  // Alpaca.logLevel = Alpaca.DEBUG;
+
+
+    var test = '<div class="registration"> \
+    <h1>Aanmelding basisschool de Werkplaats</h1> \
+    <p>Voor kinderen ouder dan 3 jaar.<p> \
+    <div class="panel panel-default" id="kind"> \
+      <div class="panel-heading"> \
+        <h3 class="panel-title">Persoonlijke gegevens kind</h3> \
+      </div> \
+      <div class="panel-body" id="kind-fields"> \
+      </div> \
+    </div> \
+    <div class="panel panel-default" id="verzorgers"> \
+      <div class="panel-heading"> \
+        <h3 class="panel-title">Persoonlijke gegevens verzorger(s)</h3> \
+      </div> \
+      <div class="panel-body" id="verzorgers-fields"> \
+      </div> \
+      <div class="panel-body"> \
+        <div class="row"> \
+            <div class="col-md-6" id="verzorger-a-fields"></div> \
+            <div class="col-md-6" id="verzorger-b-fields"></div> \
+        </div> \
+      </div> \
+    </div> \
+    <div class="panel panel-default" id="info"> \
+      <div class="panel-heading"> \
+        <h3 class="panel-title">Informatieochtend</h3> \
+      </div> \
+      <div class="panel-body" id="info-fields"> \
+        <p>Voor belangstellende ouders hebben wij regelmatig een informatieochtend. \
+        Tijdens deze ochtend krijgt u de nodige informatie over onze school en uiteraard een rondleiding. \
+        Het programma is afgestemd op volwassenen.</p> \
+      </div> \
+    </div> \
+    <div class="panel panel-default" id="gezin"> \
+      <div class="panel-heading"> \
+        <h3 class="panel-title">Gegevens gezin</h3> \
+      </div> \
+      <div class="panel-body" id="gezin-fields"> \
+      </div> \
+    </div> \
+    <div class="panel panel-default" id="begeleiding"> \
+      <div class="panel-heading"> \
+        <h3 class="panel-title">Begeleiding</h3> \
+      </div> \
+      <div class="panel-body" id="begeleiding-fields"> \
+        <p>Om uw kind bij de start op de Werkplaats de juiste begeleiding te geven willen wij een een aantal vragen stellen.</p> \
+        <p>Wij hopen op uw medewerking.</p> \
+      </div> \
+    </div> \
+    <div class="panel panel-default" id="handtekening"> \
+      <div class="panel-heading"> \
+        <h3 class="panel-title">Handtekening(en)</h3> \
+      </div> \
+      <div class="panel-body"> \
+        <p>Ondergetekende: \
+        <ul> \
+          <li>verklaart dit aanmeldingsformulier naar waarheid te hebben ingevuld.</li> \
+          <li>is op de hoogte van de regeling ouderbijdrage zoals deze op De Werkplaats gehanteerd wordt.</li> \
+        </ul> \
+        </p> \
+        <p>In de schoolgids staan alle activiteiten die op de Werkplaats plaatsvinden. Wij gaan er vanuit dat uw kind aan al deze activiteiten meedoet.</p> \
+        <p>Mochten er redenen of omstandigheden zijn waardoor uw kind aan bepaalde activiteiten niet kan deelnemen, wilt u dit dan voor plaatsing met de schoolleiding bespreken?</p> \
+        <div id="handtekening-verzorger-a-fields"></div> \
+        <div id="handtekening-verzorger-b-fields"></div> \
+          </div> \
+        </div> \
+        <div class="alert alert-info" role="alert"><p>Deze aanmelding is definitief op het moment dat u van ons een schriftelijke bevestiging heeft ontvangen.</p></div> \
+    </div> \
+    '
 
     /**
      * Initial data
@@ -76,7 +147,8 @@ $(document).ready(function() {
           },
           "messages": {
              "nl_BE": {
-                 "invalidEmail": "Vul een geldig e-mailadres in, bijv. werkplaatsbo@wpkeesboeke.nl"
+                 "invalidEmail": "Vul een geldig e-mailadres in, bijv. werkplaatsbo@wpkeesboeke.nl",
+                 "invalidValueOfEnum": "Kies één van de opties."
              }
           },
           "layout":{

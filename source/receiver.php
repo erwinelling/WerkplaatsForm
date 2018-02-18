@@ -1,10 +1,11 @@
 <?php
 // phpinfo();
 // echo "JSON options<br><br>";
-$string = file_get_contents("data/werkplaats-options.json");
+$string = file_get_contents("/build/data/werkplaats-options.json");
 $json_a = json_decode($string, true);
 $html = "";
 
+// change field labels into settings from json
 function show_nice_form_values($post, $json, $prepend_key="") {
   foreach($json['fields'] as $key=>$value){
     if (array_key_exists('fields', $json['fields'][$key])) {
@@ -48,7 +49,7 @@ function show_nice_form_values($post, $json, $prepend_key="") {
 }
 
 $pdf_data = show_nice_form_values($_POST, $json_a);
-// print $pdf_data;
+
 
 
 

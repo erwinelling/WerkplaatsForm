@@ -1,0 +1,36 @@
+{
+  "name": "jq-signature",
+  "main": "jq-signature.js",
+  "version": "2.0.0",
+  "homepage": "https://github.com/bencentra/jq-signature",
+  "authors": [
+    "Ben Centra <blcentra@gmail.com>"
+  ],
+  "description": "jQuery plugin for creating touch-friendly signature fields using the HTML5 canvas",
+  "keywords": [
+    "signature",
+    "canvas",
+    "touch"
+  ],
+  "license": "MIT",
+  "dependencies": {
+    "jquery": "^2.1.4"
+  },
+  "devDependencies": {
+    "bootstrap": "^3.3.4"
+  },
+  "ignore": [
+    "node_modules",
+    "bower_components"
+  ],
+  "_release": "2.0.0",
+  "_resolution": {
+    "type": "version",
+    "tag": "2.0.0",
+    "commit": "de82c27105fb1acf286eb225b75619f8271f072d"
+  },
+  "_source": "https://github.com/bencentra/jq-signature.git",
+  "_target": "^2.0.0",
+  "_originalSource": "jq-signature",
+  "_direct": true
+}
