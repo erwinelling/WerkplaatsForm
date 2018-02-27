@@ -1,6 +1,0 @@
-@font-face {
-  font-family: 'Schoolbell';
-  font-style: normal;
-  font-weight: 400;
-  src: local('Schoolbell Regular'), local('Schoolbell-Regular'), url(http://fonts.gstatic.com/s/schoolbell/v8/BSqn7FernLolrt-MFco9Wi3USBnSvpkopQaUR-2r7iU.ttf) format('truetype');
-}
