@@ -1,6 +1,23 @@
 <?php
-// phpinfo();
-// echo "JSON options<br><br>";
+// array holding allowed Origin domains
+$allowedOrigins = array(
+  '(http(s)://)?(www\.)?wpkeesboeke\.nl',
+  '(http(s)://)?(www\.)?een\.expert',
+  '(http(s)://)?(www\.)?erwins\-macbook\-pro\.local'
+);
+
+if (isset($_SERVER['HTTP_ORIGIN']) && $_SERVER['HTTP_ORIGIN'] != '') {
+  foreach ($allowedOrigins as $allowedOrigin) {
+    if (preg_match('#' . $allowedOrigin . '#', $_SERVER['HTTP_ORIGIN'])) {
+      header('Access-Control-Allow-Origin: ' . $_SERVER['HTTP_ORIGIN']);
+      header('Access-Control-Allow-Methods: GET, PUT, POST, DELETE, OPTIONS');
+      header('Access-Control-Max-Age: 1000');
+      header('Access-Control-Allow-Headers: Content-Type, Authorization, X-Requested-With');
+      break;
+    }
+  }
+}
+
 $string = file_get_contents("data/werkplaats-options.json");
 $json_a = json_decode($string, true);
 $html = "";
@@ -53,7 +70,7 @@ $pdf_data = show_nice_form_values($_POST, $json_a);
 
 
 // Include the main TCPDF library (search for installation path).
-require_once('phplib/TCPDF/tcpdf.php');
+require_once('../phplib/TCPDF/tcpdf.php');
 
 // Extend the TCPDF class to create custom Header and Footer
 class MYPDF extends TCPDF {
@@ -136,5 +153,5 @@ $html = $pdf_data;
 // output the HTML content
 $pdf->writeHTML($html, true, false, true, false, '');
 $pdf->Output(__DIR__ . '/Aanmelding_WP_' . date("Ymd_His") .'.pdf', 'F');
-echo "ok";
+echo "{}";
 ?>
