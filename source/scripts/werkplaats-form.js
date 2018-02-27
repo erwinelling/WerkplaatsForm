@@ -878,15 +878,20 @@ $(document).ready(function() {
                   "submit": {
                       "value": "Verstuur",
                       "click": function() {
-                          var promise = this.ajaxSubmit();
-                          promise.done(function() {
-                              alert("Success");
+                          var promise = this.ajaxSubmit({'crossDomain':true});
+                          promise.done(function(response) {
+                              // alert("Success" + response.status);
+                              $('#alert').addClass("alert alert-success");
+                              $('#alert').html( "<strong>Uw aanmelding is verstuurd.</strong> Deze aanmelding is definitief op het moment dat u van ons een schriftelijke bevestiging heeft ontvangen." );
+
                           });
-                          promise.fail(function() {
-                              alert("Error");
+                          promise.fail(function(response) {
+                              // alert("Error " + response.status);
+                              $('#alert').addClass("alert alert-danger");
+                              $('#alert').html( "<strong>Er is iets mis gegaan.</strong> Probeert u het alstublieft later nog eens." );
                           });
                           promise.always(function() {
-                              //alert("Completed");
+                              // alert("Completed");
                           });
                       }
                   }
