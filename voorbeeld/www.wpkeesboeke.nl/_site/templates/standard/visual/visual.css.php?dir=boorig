@@ -1,0 +1,19 @@
+
+
+body header:after,
+body #subMenu .menu:before        { background-color:rgba(97, 89, 81, 0.50); }
+
+body,
+.isMobile body #bgMobile div,
+body #subMenu .menu 							 { background-color:rgba(97, 89, 81, 0.50); }
+
+html:not(.isMobile) body,
+.isMobile body #bgMobile div,
+body header:before						{ background-image:url('../../../../media/bgimages/bo/$w,1024$-c,c2b3a3-IMG_3559.jpg'); }
+
+body nav a:hover    { background:rgba(194, 179, 163, 0.35); }
+body nav a.selected { background:rgba(194, 179, 163, 0.50); }
+
+#calendar .calMonth:before,
+#calendar .isToday  { background-color:rgba(174, 161, 146, 1.0); }
+#calendar .isToday.hasEvent > div { border-color:rgba(174, 161, 146, 1.0)!important; }

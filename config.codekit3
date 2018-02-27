@@ -140000,11 +140000,755 @@
 		"oF": 1,
 		"oS": 3
 		},
-	"\/werkplaats\/voorbeeld\/www.wpkeesboeke.nl\/bo\/index.html": {
+	"\/voorbeeld\/fonts.googleapis.com\/css?family=Open+Sans:400,600%7CParisienne%7CSchoolbell.css": {
+		"aP": 1,
+		"bl": 0,
+		"ft": 16,
+		"ma": 0,
+		"oA": 0,
+		"oAP": "\/build\/voorbeeld\/fonts.googleapis.com\/css?family=Open+Sans:400,600%7CParisienne%7CSchoolbell-min.css",
+		"oF": 0,
+		"oS": 3
+		},
+	"\/voorbeeld\/fonts.googleapis.com\/css?family=Open+Sans:400,600%7CParisienne%7CSchoolbellorig": {
 		"cB": 0,
 		"ft": 8192,
 		"oA": 0,
-		"oAP": "\/build\/werkplaats\/voorbeeld\/www.wpkeesboeke.nl\/bo\/index.html",
+		"oAP": "\/build\/voorbeeld\/fonts.googleapis.com\/css?family=Open+Sans:400,600%7CParisienne%7CSchoolbellorig",
+		"oF": 0
+		},
+	"\/voorbeeld\/fonts.googleapis.com\/css?family=Open+Sans:400,600.css": {
+		"aP": 1,
+		"bl": 0,
+		"ft": 16,
+		"ma": 0,
+		"oA": 0,
+		"oAP": "\/build\/voorbeeld\/fonts.googleapis.com\/css?family=Open+Sans:400,600-min.css",
+		"oF": 0,
+		"oS": 3
+		},
+	"\/voorbeeld\/fonts.googleapis.com\/css?family=Open+Sans:400,600orig": {
+		"cB": 0,
+		"ft": 8192,
+		"oA": 0,
+		"oAP": "\/build\/voorbeeld\/fonts.googleapis.com\/css?family=Open+Sans:400,600orig",
+		"oF": 0
+		},
+	"\/voorbeeld\/fonts.googleapis.com\/css?family=Parisienne.css": {
+		"aP": 1,
+		"bl": 0,
+		"ft": 16,
+		"ma": 0,
+		"oA": 0,
+		"oAP": "\/build\/voorbeeld\/fonts.googleapis.com\/css?family=Parisienne-min.css",
+		"oF": 0,
+		"oS": 3
+		},
+	"\/voorbeeld\/fonts.googleapis.com\/css?family=Parisienneorig": {
+		"cB": 0,
+		"ft": 8192,
+		"oA": 0,
+		"oAP": "\/build\/voorbeeld\/fonts.googleapis.com\/css?family=Parisienneorig",
+		"oF": 0
+		},
+	"\/voorbeeld\/fonts.googleapis.com\/css?family=Schoolbell.css": {
+		"aP": 1,
+		"bl": 0,
+		"ft": 16,
+		"ma": 0,
+		"oA": 0,
+		"oAP": "\/build\/voorbeeld\/fonts.googleapis.com\/css?family=Schoolbell-min.css",
+		"oF": 0,
+		"oS": 3
+		},
+	"\/voorbeeld\/fonts.googleapis.com\/css?family=Schoolbellorig": {
+		"cB": 0,
+		"ft": 8192,
+		"oA": 0,
+		"oAP": "\/build\/voorbeeld\/fonts.googleapis.com\/css?family=Schoolbellorig",
+		"oF": 0
+		},
+	"\/voorbeeld\/fonts.googleapis.com\/robots.txt": {
+		"cB": 0,
+		"ft": 8192,
+		"oA": 0,
+		"oAP": "\/build\/voorbeeld\/fonts.googleapis.com\/robots.txt",
+		"oF": 0
+		},
+	"\/voorbeeld\/fonts.gstatic.com\/s\/opensans\/v15\/cJZKeOuBrn4kERxqtaUH3aCWcynf_cDxXwCLxiixG1c.ttf": {
+		"cB": 0,
+		"ft": 8192,
+		"oA": 0,
+		"oAP": "\/build\/voorbeeld\/fonts.gstatic.com\/s\/opensans\/v15\/cJZKeOuBrn4kERxqtaUH3aCWcynf_cDxXwCLxiixG1c.ttf",
+		"oF": 0
+		},
+	"\/voorbeeld\/fonts.gstatic.com\/s\/opensans\/v15\/MTP_ySUJH_bn48VBG8sNSonF5uFdDttMLvmWuJdhhgs.ttf": {
+		"cB": 0,
+		"ft": 8192,
+		"oA": 0,
+		"oAP": "\/build\/voorbeeld\/fonts.gstatic.com\/s\/opensans\/v15\/MTP_ySUJH_bn48VBG8sNSonF5uFdDttMLvmWuJdhhgs.ttf",
+		"oF": 0
+		},
+	"\/voorbeeld\/fonts.gstatic.com\/s\/parisienne\/v5\/1wiHF6pWOa568Cj3p-anxC3USBnSvpkopQaUR-2r7iU.ttf": {
+		"cB": 0,
+		"ft": 8192,
+		"oA": 0,
+		"oAP": "\/build\/voorbeeld\/fonts.gstatic.com\/s\/parisienne\/v5\/1wiHF6pWOa568Cj3p-anxC3USBnSvpkopQaUR-2r7iU.ttf",
+		"oF": 0
+		},
+	"\/voorbeeld\/fonts.gstatic.com\/s\/schoolbell\/v8\/BSqn7FernLolrt-MFco9Wi3USBnSvpkopQaUR-2r7iU.ttf": {
+		"cB": 0,
+		"ft": 8192,
+		"oA": 0,
+		"oAP": "\/build\/voorbeeld\/fonts.gstatic.com\/s\/schoolbell\/v8\/BSqn7FernLolrt-MFco9Wi3USBnSvpkopQaUR-2r7iU.ttf",
+		"oF": 0
+		},
+	"\/voorbeeld\/www.wpkeesboeke.nl\/_cms\/session\/loggedout.js": {
+		"ft": 64,
+		"ma": 0,
+		"mi": 1,
+		"oA": 0,
+		"oAP": "\/build\/voorbeeld\/www.wpkeesboeke.nl\/_cms\/session\/loggedout-min.js",
+		"oF": 0,
+		"sC": 3,
+		"tS": 0
+		},
+	"\/voorbeeld\/www.wpkeesboeke.nl\/_site\/fxs\/leaves\/realLeaf1.png": {
+		"ft": 32768,
+		"iS": 14356,
+		"oA": 0,
+		"oAP": "\/build\/voorbeeld\/www.wpkeesboeke.nl\/_site\/fxs\/leaves\/realLeaf1.png",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"oT": 1,
+		"q": 100
+		},
+	"\/voorbeeld\/www.wpkeesboeke.nl\/_site\/fxs\/leaves\/realLeaf2.png": {
+		"ft": 32768,
+		"iS": 12581,
+		"oA": 0,
+		"oAP": "\/build\/voorbeeld\/www.wpkeesboeke.nl\/_site\/fxs\/leaves\/realLeaf2.png",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"oT": 1,
+		"q": 100
+		},
+	"\/voorbeeld\/www.wpkeesboeke.nl\/_site\/fxs\/leaves\/realLeaf3.png": {
+		"ft": 32768,
+		"iS": 22149,
+		"oA": 0,
+		"oAP": "\/build\/voorbeeld\/www.wpkeesboeke.nl\/_site\/fxs\/leaves\/realLeaf3.png",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"oT": 1,
+		"q": 100
+		},
+	"\/voorbeeld\/www.wpkeesboeke.nl\/_site\/fxs\/leaves\/realLeaf4.png": {
+		"ft": 32768,
+		"iS": 21439,
+		"oA": 0,
+		"oAP": "\/build\/voorbeeld\/www.wpkeesboeke.nl\/_site\/fxs\/leaves\/realLeaf4.png",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"oT": 1,
+		"q": 100
+		},
+	"\/voorbeeld\/www.wpkeesboeke.nl\/_site\/fxs\/xmas\/lights-h25.gif": {
+		"ft": 4194304,
+		"iS": 14691,
+		"oA": 0,
+		"oAP": "\/build\/voorbeeld\/www.wpkeesboeke.nl\/_site\/fxs\/xmas\/lights-h25.gif",
+		"oF": 0,
+		"opt": 0
+		},
+	"\/voorbeeld\/www.wpkeesboeke.nl\/_site\/htmlcs\/blockquote\/balloon-right.png": {
+		"ft": 32768,
+		"iS": 15617,
+		"oA": 0,
+		"oAP": "\/build\/voorbeeld\/www.wpkeesboeke.nl\/_site\/htmlcs\/blockquote\/balloon-right.png",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"oT": 1,
+		"q": 100
+		},
+	"\/voorbeeld\/www.wpkeesboeke.nl\/_site\/htmlcs\/blockquote\/balloon.png": {
+		"ft": 32768,
+		"iS": 15647,
+		"oA": 0,
+		"oAP": "\/build\/voorbeeld\/www.wpkeesboeke.nl\/_site\/htmlcs\/blockquote\/balloon.png",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"oT": 1,
+		"q": 100
+		},
+	"\/voorbeeld\/www.wpkeesboeke.nl\/_site\/htmlcs\/blockquote\/doodle.png": {
+		"ft": 32768,
+		"iS": 31150,
+		"oA": 0,
+		"oAP": "\/build\/voorbeeld\/www.wpkeesboeke.nl\/_site\/htmlcs\/blockquote\/doodle.png",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"oT": 1,
+		"q": 100
+		},
+	"\/voorbeeld\/www.wpkeesboeke.nl\/_site\/htmlcs\/blockquote\/kladblok.png": {
+		"ft": 32768,
+		"iS": 230113,
+		"oA": 0,
+		"oAP": "\/build\/voorbeeld\/www.wpkeesboeke.nl\/_site\/htmlcs\/blockquote\/kladblok.png",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"oT": 1,
+		"q": 100
+		},
+	"\/voorbeeld\/www.wpkeesboeke.nl\/_site\/htmlcs\/blockquote\/sticky.png": {
+		"ft": 32768,
+		"iS": 221746,
+		"oA": 0,
+		"oAP": "\/build\/voorbeeld\/www.wpkeesboeke.nl\/_site\/htmlcs\/blockquote\/sticky.png",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"oT": 1,
+		"q": 100
+		},
+	"\/voorbeeld\/www.wpkeesboeke.nl\/_site\/htmlcs\/blockquote\/tegeltje.png": {
+		"ft": 32768,
+		"iS": 45269,
+		"oA": 0,
+		"oAP": "\/build\/voorbeeld\/www.wpkeesboeke.nl\/_site\/htmlcs\/blockquote\/tegeltje.png",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"oT": 1,
+		"q": 100
+		},
+	"\/voorbeeld\/www.wpkeesboeke.nl\/_site\/htmlcs\/date\/doodle.png": {
+		"ft": 32768,
+		"iS": 6027,
+		"oA": 0,
+		"oAP": "\/build\/voorbeeld\/www.wpkeesboeke.nl\/_site\/htmlcs\/date\/doodle.png",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"oT": 1,
+		"q": 100
+		},
+	"\/voorbeeld\/www.wpkeesboeke.nl\/_site\/htmlcs\/image\/close.png": {
+		"ft": 32768,
+		"iS": 9327,
+		"oA": 0,
+		"oAP": "\/build\/voorbeeld\/www.wpkeesboeke.nl\/_site\/htmlcs\/image\/close.png",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"oT": 1,
+		"q": 100
+		},
+	"\/voorbeeld\/www.wpkeesboeke.nl\/_site\/htmlcs\/image\/comic1.png": {
+		"ft": 32768,
+		"iS": 55778,
+		"oA": 0,
+		"oAP": "\/build\/voorbeeld\/www.wpkeesboeke.nl\/_site\/htmlcs\/image\/comic1.png",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"oT": 1,
+		"q": 100
+		},
+	"\/voorbeeld\/www.wpkeesboeke.nl\/_site\/htmlcs\/image\/comic2.png": {
+		"ft": 32768,
+		"iS": 74406,
+		"oA": 0,
+		"oAP": "\/build\/voorbeeld\/www.wpkeesboeke.nl\/_site\/htmlcs\/image\/comic2.png",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"oT": 1,
+		"q": 100
+		},
+	"\/voorbeeld\/www.wpkeesboeke.nl\/_site\/htmlcs\/image\/comic3.png": {
+		"ft": 32768,
+		"iS": 141018,
+		"oA": 0,
+		"oAP": "\/build\/voorbeeld\/www.wpkeesboeke.nl\/_site\/htmlcs\/image\/comic3.png",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"oT": 1,
+		"q": 100
+		},
+	"\/voorbeeld\/www.wpkeesboeke.nl\/_site\/htmlcs\/image\/doodle.png": {
+		"ft": 32768,
+		"iS": 35974,
+		"oA": 0,
+		"oAP": "\/build\/voorbeeld\/www.wpkeesboeke.nl\/_site\/htmlcs\/image\/doodle.png",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"oT": 1,
+		"q": 100
+		},
+	"\/voorbeeld\/www.wpkeesboeke.nl\/_site\/htmlcs\/image\/doodleframe.png": {
+		"ft": 32768,
+		"iS": 78134,
+		"oA": 0,
+		"oAP": "\/build\/voorbeeld\/www.wpkeesboeke.nl\/_site\/htmlcs\/image\/doodleframe.png",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"oT": 1,
+		"q": 100
+		},
+	"\/voorbeeld\/www.wpkeesboeke.nl\/_site\/htmlcs\/image\/frame-oval.png": {
+		"ft": 32768,
+		"iS": 307506,
+		"oA": 0,
+		"oAP": "\/build\/voorbeeld\/www.wpkeesboeke.nl\/_site\/htmlcs\/image\/frame-oval.png",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"oT": 1,
+		"q": 100
+		},
+	"\/voorbeeld\/www.wpkeesboeke.nl\/_site\/htmlcs\/image\/goldframe.png": {
+		"ft": 32768,
+		"iS": 123110,
+		"oA": 0,
+		"oAP": "\/build\/voorbeeld\/www.wpkeesboeke.nl\/_site\/htmlcs\/image\/goldframe.png",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"oT": 1,
+		"q": 100
+		},
+	"\/voorbeeld\/www.wpkeesboeke.nl\/_site\/htmlcs\/image\/polaroid.png": {
+		"ft": 32768,
+		"iS": 120700,
+		"oA": 0,
+		"oAP": "\/build\/voorbeeld\/www.wpkeesboeke.nl\/_site\/htmlcs\/image\/polaroid.png",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"oT": 1,
+		"q": 100
+		},
+	"\/voorbeeld\/www.wpkeesboeke.nl\/_site\/htmlcs\/qanda\/doodle-antwoord.png": {
+		"ft": 32768,
+		"iS": 37032,
+		"oA": 0,
+		"oAP": "\/build\/voorbeeld\/www.wpkeesboeke.nl\/_site\/htmlcs\/qanda\/doodle-antwoord.png",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"oT": 1,
+		"q": 100
+		},
+	"\/voorbeeld\/www.wpkeesboeke.nl\/_site\/htmlcs\/qanda\/doodle-vraag.png": {
+		"ft": 32768,
+		"iS": 33067,
+		"oA": 0,
+		"oAP": "\/build\/voorbeeld\/www.wpkeesboeke.nl\/_site\/htmlcs\/qanda\/doodle-vraag.png",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"oT": 1,
+		"q": 100
+		},
+	"\/voorbeeld\/www.wpkeesboeke.nl\/_site\/htmlcs\/reminder\/geeltje.png": {
+		"ft": 32768,
+		"iS": 38521,
+		"oA": 0,
+		"oAP": "\/build\/voorbeeld\/www.wpkeesboeke.nl\/_site\/htmlcs\/reminder\/geeltje.png",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"oT": 1,
+		"q": 100
+		},
+	"\/voorbeeld\/www.wpkeesboeke.nl\/_site\/htmlcs\/slideshow\/play.png": {
+		"ft": 32768,
+		"iS": 7353,
+		"oA": 0,
+		"oAP": "\/build\/voorbeeld\/www.wpkeesboeke.nl\/_site\/htmlcs\/slideshow\/play.png",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"oT": 1,
+		"q": 100
+		},
+	"\/voorbeeld\/www.wpkeesboeke.nl\/_site\/htmlcs\/textframe\/kreukels.jpg": {
+		"ft": 16384,
+		"iS": 15069,
+		"oA": 0,
+		"oAP": "\/build\/voorbeeld\/www.wpkeesboeke.nl\/_site\/htmlcs\/textframe\/kreukels.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
+	"\/voorbeeld\/www.wpkeesboeke.nl\/_site\/htmlcs\/video\/action.png": {
+		"ft": 32768,
+		"iS": 70276,
+		"oA": 0,
+		"oAP": "\/build\/voorbeeld\/www.wpkeesboeke.nl\/_site\/htmlcs\/video\/action.png",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"oT": 1,
+		"q": 100
+		},
+	"\/voorbeeld\/www.wpkeesboeke.nl\/_site\/htmlcs\/video\/doodle.png": {
+		"ft": 32768,
+		"iS": 198087,
+		"oA": 0,
+		"oAP": "\/build\/voorbeeld\/www.wpkeesboeke.nl\/_site\/htmlcs\/video\/doodle.png",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"oT": 1,
+		"q": 100
+		},
+	"\/voorbeeld\/www.wpkeesboeke.nl\/_site\/htmlcs\/video\/filmstrip.png": {
+		"ft": 32768,
+		"iS": 26998,
+		"oA": 0,
+		"oAP": "\/build\/voorbeeld\/www.wpkeesboeke.nl\/_site\/htmlcs\/video\/filmstrip.png",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"oT": 1,
+		"q": 100
+		},
+	"\/voorbeeld\/www.wpkeesboeke.nl\/_site\/htmlcs\/video\/tv.png": {
+		"ft": 32768,
+		"iS": 823428,
+		"oA": 0,
+		"oAP": "\/build\/voorbeeld\/www.wpkeesboeke.nl\/_site\/htmlcs\/video\/tv.png",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"oT": 1,
+		"q": 100
+		},
+	"\/voorbeeld\/www.wpkeesboeke.nl\/_site\/templates\/standard\/all.js": {
+		"ft": 64,
+		"ma": 0,
+		"mi": 1,
+		"oA": 0,
+		"oAP": "\/build\/voorbeeld\/www.wpkeesboeke.nl\/_site\/templates\/standard\/all-min.js",
+		"oF": 0,
+		"sC": 3,
+		"tS": 0
+		},
+	"\/voorbeeld\/www.wpkeesboeke.nl\/_site\/templates\/standard\/font-awesome\/fontawesome-webfont.ttf?v=4.1.0.html": {
+		"cB": 0,
+		"ft": 8192,
+		"oA": 0,
+		"oAP": "\/build\/voorbeeld\/www.wpkeesboeke.nl\/_site\/templates\/standard\/font-awesome\/fontawesome-webfont.ttf?v=4.1.0.html",
+		"oF": 0
+		},
+	"\/voorbeeld\/www.wpkeesboeke.nl\/_site\/templates\/standard\/font-awesome\/fontawesome-webfont.ttf?v=4.1.0.orig": {
+		"cB": 0,
+		"ft": 8192,
+		"oA": 0,
+		"oAP": "\/build\/voorbeeld\/www.wpkeesboeke.nl\/_site\/templates\/standard\/font-awesome\/fontawesome-webfont.ttf?v=4.1.0.orig",
+		"oF": 0
+		},
+	"\/voorbeeld\/www.wpkeesboeke.nl\/_site\/templates\/standard\/images\/article\/kreukels.jpg": {
+		"ft": 16384,
+		"iS": 15069,
+		"oA": 0,
+		"oAP": "\/build\/voorbeeld\/www.wpkeesboeke.nl\/_site\/templates\/standard\/images\/article\/kreukels.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
+	"\/voorbeeld\/www.wpkeesboeke.nl\/_site\/templates\/standard\/images\/article\/lijntjes.png": {
+		"ft": 32768,
+		"iS": 404953,
+		"oA": 0,
+		"oAP": "\/build\/voorbeeld\/www.wpkeesboeke.nl\/_site\/templates\/standard\/images\/article\/lijntjes.png",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"oT": 1,
+		"q": 100
+		},
+	"\/voorbeeld\/www.wpkeesboeke.nl\/_site\/templates\/standard\/images\/article\/note.png": {
+		"ft": 32768,
+		"iS": 40963,
+		"oA": 0,
+		"oAP": "\/build\/voorbeeld\/www.wpkeesboeke.nl\/_site\/templates\/standard\/images\/article\/note.png",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"oT": 1,
+		"q": 100
+		},
+	"\/voorbeeld\/www.wpkeesboeke.nl\/_site\/templates\/standard\/images\/article\/ruitjes-licht.png": {
+		"ft": 32768,
+		"iS": 465218,
+		"oA": 0,
+		"oAP": "\/build\/voorbeeld\/www.wpkeesboeke.nl\/_site\/templates\/standard\/images\/article\/ruitjes-licht.png",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"oT": 1,
+		"q": 100
+		},
+	"\/voorbeeld\/www.wpkeesboeke.nl\/_site\/templates\/standard\/images\/article\/sketch.png": {
+		"ft": 32768,
+		"iS": 24290,
+		"oA": 0,
+		"oAP": "\/build\/voorbeeld\/www.wpkeesboeke.nl\/_site\/templates\/standard\/images\/article\/sketch.png",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"oT": 1,
+		"q": 100
+		},
+	"\/voorbeeld\/www.wpkeesboeke.nl\/_site\/templates\/standard\/images\/bgad.png": {
+		"ft": 32768,
+		"iS": 50587,
+		"oA": 0,
+		"oAP": "\/build\/voorbeeld\/www.wpkeesboeke.nl\/_site\/templates\/standard\/images\/bgad.png",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"oT": 1,
+		"q": 100
+		},
+	"\/voorbeeld\/www.wpkeesboeke.nl\/_site\/templates\/standard\/images\/curl-left.png": {
+		"ft": 32768,
+		"iS": 3708,
+		"oA": 0,
+		"oAP": "\/build\/voorbeeld\/www.wpkeesboeke.nl\/_site\/templates\/standard\/images\/curl-left.png",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"oT": 1,
+		"q": 100
+		},
+	"\/voorbeeld\/www.wpkeesboeke.nl\/_site\/templates\/standard\/images\/curl-right.png": {
+		"ft": 32768,
+		"iS": 4160,
+		"oA": 0,
+		"oAP": "\/build\/voorbeeld\/www.wpkeesboeke.nl\/_site\/templates\/standard\/images\/curl-right.png",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"oT": 1,
+		"q": 100
+		},
+	"\/voorbeeld\/www.wpkeesboeke.nl\/_site\/templates\/standard\/images\/sprites.png": {
+		"ft": 32768,
+		"iS": 239073,
+		"oA": 0,
+		"oAP": "\/build\/voorbeeld\/www.wpkeesboeke.nl\/_site\/templates\/standard\/images\/sprites.png",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"oT": 1,
+		"q": 100
+		},
+	"\/voorbeeld\/www.wpkeesboeke.nl\/_site\/templates\/standard\/images\/sticker-bo-bw.png": {
+		"ft": 32768,
+		"iS": 4390,
+		"oA": 0,
+		"oAP": "\/build\/voorbeeld\/www.wpkeesboeke.nl\/_site\/templates\/standard\/images\/sticker-bo-bw.png",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"oT": 1,
+		"q": 100
+		},
+	"\/voorbeeld\/www.wpkeesboeke.nl\/_site\/templates\/standard\/images\/sticker-kb-bw.png": {
+		"ft": 32768,
+		"iS": 5048,
+		"oA": 0,
+		"oAP": "\/build\/voorbeeld\/www.wpkeesboeke.nl\/_site\/templates\/standard\/images\/sticker-kb-bw.png",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"oT": 1,
+		"q": 100
+		},
+	"\/voorbeeld\/www.wpkeesboeke.nl\/_site\/templates\/standard\/images\/sticker-vo-bw.png": {
+		"ft": 32768,
+		"iS": 4473,
+		"oA": 0,
+		"oAP": "\/build\/voorbeeld\/www.wpkeesboeke.nl\/_site\/templates\/standard\/images\/sticker-vo-bw.png",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"oT": 1,
+		"q": 100
+		},
+	"\/voorbeeld\/www.wpkeesboeke.nl\/_site\/templates\/standard\/images\/sticker-wp-40x40.png": {
+		"ft": 32768,
+		"iS": 4820,
+		"oA": 0,
+		"oAP": "\/build\/voorbeeld\/www.wpkeesboeke.nl\/_site\/templates\/standard\/images\/sticker-wp-40x40.png",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"oT": 1,
+		"q": 100
+		},
+	"\/voorbeeld\/www.wpkeesboeke.nl\/_site\/templates\/standard\/template.css": {
+		"aP": 1,
+		"bl": 0,
+		"ft": 16,
+		"ma": 0,
+		"oA": 0,
+		"oAP": "\/build\/voorbeeld\/www.wpkeesboeke.nl\/_site\/templates\/standard\/template-min.css",
+		"oF": 0,
+		"oS": 3
+		},
+	"\/voorbeeld\/www.wpkeesboeke.nl\/_site\/templates\/standard\/template.css.orig": {
+		"cB": 0,
+		"ft": 8192,
+		"oA": 0,
+		"oAP": "\/build\/voorbeeld\/www.wpkeesboeke.nl\/_site\/templates\/standard\/template.css.orig",
+		"oF": 0
+		},
+	"\/voorbeeld\/www.wpkeesboeke.nl\/_site\/templates\/standard\/visual\/visual.css.php?dir=bo.css": {
+		"aP": 1,
+		"bl": 0,
+		"ft": 16,
+		"ma": 0,
+		"oA": 0,
+		"oAP": "\/build\/voorbeeld\/www.wpkeesboeke.nl\/_site\/templates\/standard\/visual\/visual.css.php?dir=bo-min.css",
+		"oF": 0,
+		"oS": 3
+		},
+	"\/voorbeeld\/www.wpkeesboeke.nl\/_site\/templates\/standard\/visual\/visual.css.php?dir=boorig": {
+		"cB": 0,
+		"ft": 8192,
+		"oA": 0,
+		"oAP": "\/build\/voorbeeld\/www.wpkeesboeke.nl\/_site\/templates\/standard\/visual\/visual.css.php?dir=boorig",
+		"oF": 0
+		},
+	"\/voorbeeld\/www.wpkeesboeke.nl\/bo\/berichten\/deze-week\/een_post_cito_concert_voor_5_6\/slideshow-concert\/$w,M$8f4cf92d-cb80-4471-b5fc-ccc1203aa383.JPG": {
+		"ft": 16384,
+		"iS": 7543,
+		"oA": 0,
+		"oAP": "\/build\/voorbeeld\/www.wpkeesboeke.nl\/bo\/berichten\/deze-week\/een_post_cito_concert_voor_5_6\/slideshow-concert\/$w,M$8f4cf92d-cb80-4471-b5fc-ccc1203aa383.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
+	"\/voorbeeld\/www.wpkeesboeke.nl\/bo\/berichten\/deze-week\/kunst_in_de_onderbouw\/$w,S$DSCN2048.JPG": {
+		"ft": 16384,
+		"iS": 6146,
+		"oA": 0,
+		"oAP": "\/build\/voorbeeld\/www.wpkeesboeke.nl\/bo\/berichten\/deze-week\/kunst_in_de_onderbouw\/$w,S$DSCN2048.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
+	"\/voorbeeld\/www.wpkeesboeke.nl\/bo\/berichten\/deze-week\/nog_iets_van_5_6\/slideshow-cobra\/$r,L$6cccbd76-7dff-42ef-9580-722acfeb0f87.JPG": {
+		"ft": 16384,
+		"iS": 20426,
+		"oA": 0,
+		"oAP": "\/build\/voorbeeld\/www.wpkeesboeke.nl\/bo\/berichten\/deze-week\/nog_iets_van_5_6\/slideshow-cobra\/$r,L$6cccbd76-7dff-42ef-9580-722acfeb0f87.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
+	"\/voorbeeld\/www.wpkeesboeke.nl\/bo\/berichten\/deze-week\/vulkaan\/vulkaan.mp4": {
+		"cB": 0,
+		"ft": 8192,
+		"oA": 0,
+		"oAP": "\/build\/voorbeeld\/www.wpkeesboeke.nl\/bo\/berichten\/deze-week\/vulkaan\/vulkaan.mp4",
+		"oF": 0
+		},
+	"\/voorbeeld\/www.wpkeesboeke.nl\/bo\/berichten\/deze-week\/winterzon\/slideshow-winterzon\/$r,L$d693f3d4-953d-4d09-baa2-22e18fbd4827.JPG": {
+		"ft": 16384,
+		"iS": 11480,
+		"oA": 0,
+		"oAP": "\/build\/voorbeeld\/www.wpkeesboeke.nl\/bo\/berichten\/deze-week\/winterzon\/slideshow-winterzon\/$r,L$d693f3d4-953d-4d09-baa2-22e18fbd4827.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
+	"\/voorbeeld\/www.wpkeesboeke.nl\/bo\/berichten\/index.html": {
+		"cB": 0,
+		"ft": 8192,
+		"oA": 0,
+		"oAP": "\/build\/voorbeeld\/www.wpkeesboeke.nl\/bo\/berichten\/index.html",
+		"oF": 0
+		},
+	"\/voorbeeld\/www.wpkeesboeke.nl\/bo\/berichten\/index.html.orig": {
+		"cB": 0,
+		"ft": 8192,
+		"oA": 0,
+		"oAP": "\/build\/voorbeeld\/www.wpkeesboeke.nl\/bo\/berichten\/index.html.orig",
+		"oF": 0
+		},
+	"\/voorbeeld\/www.wpkeesboeke.nl\/bo\/index.html": {
+		"cB": 0,
+		"ft": 8192,
+		"oA": 0,
+		"oAP": "\/build\/voorbeeld\/www.wpkeesboeke.nl\/bo\/index.html",
+		"oF": 0
+		},
+	"\/voorbeeld\/www.wpkeesboeke.nl\/media\/bgimages\/bo\/$w,1024$-c,c2b3a3-IMG_3559.jpg": {
+		"ft": 16384,
+		"iS": 23281,
+		"oA": 0,
+		"oAP": "\/build\/voorbeeld\/www.wpkeesboeke.nl\/media\/bgimages\/bo\/$w,1024$-c,c2b3a3-IMG_3559.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
+	"\/voorbeeld\/www.wpkeesboeke.nl\/media\/bgimages\/bo\/$w,1024$-c,ccaa99-IMG_3563.jpg": {
+		"ft": 16384,
+		"iS": 68033,
+		"oA": 0,
+		"oAP": "\/build\/voorbeeld\/www.wpkeesboeke.nl\/media\/bgimages\/bo\/$w,1024$-c,ccaa99-IMG_3563.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
+	"\/voorbeeld\/www.wpkeesboeke.nl\/media\/bo\/2014\/50\/$w,L$bogebouw.jpg": {
+		"ft": 16384,
+		"iS": 12045,
+		"oA": 0,
+		"oAP": "\/build\/voorbeeld\/www.wpkeesboeke.nl\/media\/bo\/2014\/50\/$w,L$bogebouw.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
+	"\/voorbeeld\/www.wpkeesboeke.nl\/robots.txt.html": {
+		"cB": 0,
+		"ft": 8192,
+		"oA": 0,
+		"oAP": "\/build\/voorbeeld\/www.wpkeesboeke.nl\/robots.txt.html",
+		"oF": 0
+		},
+	"\/voorbeeld\/www.wpkeesboeke.nl\/robots.txt.orig": {
+		"cB": 0,
+		"ft": 8192,
+		"oA": 0,
+		"oAP": "\/build\/voorbeeld\/www.wpkeesboeke.nl\/robots.txt.orig",
 		"oF": 0
 		}
 	},
